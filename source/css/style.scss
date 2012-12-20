@@ -1,0 +1,171 @@
+/**
+ * Main Stylesheet
+ */
+
+@import "compass/typography/links";
+@import "compass/typography/lists";
+
+@mixin portrait {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+body {
+  color: #444;
+  font: 1em/1 myriad-pro, sans-serif;
+
+  @include portrait {
+    padding: 0;
+  }
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  line-height: 1.25;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.75em;
+  font-weight: normal;
+    line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  color: #444;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1;
+  margin: 36px 0 12px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.25;
+  font-weight: 300;
+  margin: 0 0 20px;
+
+  code {
+    color: #333;
+    font-weight: normal;
+    margin: 0 3px;
+  }
+}
+
+pre {
+  margin: 0 0 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Layout
+ */
+
+#wrapper {
+  padding: 24px 0;
+
+  @include portrait {
+    padding: 0;
+  }
+}
+
+header#site-header {
+ margin: 0 0 16px;
+
+  a {
+    @include unstyled-link;
+    @include link-colors(#222);
+  }
+
+  @include portrait {
+    margin: 0 0 12px;
+    padding: 0 20px;
+  }
+}
+
+section#main-content {
+  margin-bottom: 24px;
+
+  h2 a {
+    @include link-colors(#444);
+  }
+
+  @include portrait {
+    margin: 0 0 24px;
+    padding: 0 20px;
+  }
+
+  .date {
+    color: #666;
+    font-size: 0.875em;
+    line-height: 1;
+    margin: 0 0 12px;
+  }
+}
+
+aside#sidebar {
+  section {
+    margin: 0 0 24px;
+
+    &:first-child h3 {
+      margin-top: 0;
+    }
+
+    .date {
+      color: #888;
+      font-size: 0.875em;
+      line-height: 1;
+      padding-left: 4px;
+    }
+  }
+
+  @include portrait {
+    background: #ddd;
+    padding: 20px 20px 4px;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+.article-list {
+  article {
+    margin: 0 0 16px;
+  }
+}
+
+footer#site-footer {
+  color: #666;
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+
+  @include portrait {
+    background: #888;
+    color: #eee;
+    font-weight: normal;
+    padding: 4px 20px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Geneirc Styles
+ */
+
+.no-bullets {
+  @include no-bullet;
+}
+
+.text-center {
+  text-align: center;
+}
