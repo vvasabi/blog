@@ -1,14 +1,9 @@
 ---
 title: git Centralized Repository Creation (for SVN users)
+cover_image: /images/git.png
 date: 2010-12-11
 tags: git, open source, source control
 ---
-<p class="text-center">
-  <a href="/blog/2010/12/git-centralized-repository-creation"><img
-    src="http://www.bradchen.com/sites/default/files/git.png"
-    alt="git manual page" /></a>
-</p>
-
 Since git is a distributed source control system, having a centralized
 repository is optional. People that are familiar with SVN often face the
 problem—how to create a centralized repository—when they switch to git.

@@ -1,14 +1,9 @@
 ---
 title: MP4Box Cli Recipes
+cover_image: /images/mp4box.gif
 date: 2010-12-11
 tags: media conversion, mp4box
 ---
-<p class="text-center">
-  <a href="/blog/2010/12/mp4box-recipes"><img
-    src="http://www.bradchen.com/sites/default/files/mp4box.gif"
-    alt="MP4Box" /></a>
-</p>
-
 Here are some commonly-used MP4Box commands.
 
 READMORE

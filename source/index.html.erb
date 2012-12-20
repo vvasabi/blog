@@ -13,7 +13,19 @@ hide_title: true
         <span><%= article.date.strftime('%B %e, %Y') %></span>
       </div>
 
+      <% if article.data.cover_image %>
+        <p class="text-center">
+          <% link_to article do %>
+            <%= image_tag article.data.cover_image, :alt => article.title %>
+          <% end %>
+        </p>
+      <% end %>
+
       <%= article.summary %>
+
+      <p>
+        <%= link_to 'Read more »', article %>
+      </p>
     </article>
   <% end %>
 </div>

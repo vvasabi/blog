@@ -32,10 +32,27 @@
             </div>
           <% end %>
 
+          <% if current_page.data.cover_image %>
+            <p class="text-center">
+              <% link_to '/' + request.path do %>
+                <%= image_tag current_page.data.cover_image,
+                              :alt => data.page.title %>
+              <% end %>
+            </p>
+          <% end %>
+
           <%= yield %>
+
+          <% if request.path != 'index.html' %>
+            <p>
+              <%= link_to '« Go back', '/' %>
+            </p>
+          <% end %>
         </section>
 
         <aside id="sidebar" class="span3 offset1">
+          <h2><a href="/">BradChen.com</a></h2>
+
           <section>
             <h3>About</h3>
 
