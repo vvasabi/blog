@@ -14,6 +14,9 @@
 body {
   color: #444;
   font: 1em/1 myriad-pro, sans-serif;
+  -moz-font-feature-settings: "liga=1";
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
 
   @include portrait {
     padding: 0;
@@ -37,24 +40,58 @@ h2 {
 h3 {
   border-bottom: 1px solid #ddd;
   color: #444;
-  font-size: 1.25em;
-  font-style: italic;
+  font-size: 1.375em;
   font-weight: normal;
   line-height: 1;
   margin: 36px 0 12px;
 }
 
+h4 {
+	font-size: 1.125em;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 36px 0 12px;
+
+	h3 + & {
+		margin-top: 0;
+	}
+}
+
+h3 code,
+h4 code {
+  color: inherit;
+  border: none;
+  background: none;
+  font-size: 0.875em;
+  line-height: 1;
+}
+
 p {
   font-size: 1em;
-  line-height: 1.25;
+  line-height: 1.375;
   font-weight: 300;
   margin: 0 0 20px;
 
-  code {
-    color: #333;
+  a {
     font-weight: normal;
-    margin: 0 3px;
   }
+
+  code {
+    font-size: 0.75em;
+    font-weight: normal;
+    line-height: 1.125;
+    margin: 0 3px;
+    padding: 1px 3px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+p code,
+ul code {
+  color: #333;
 }
 
 pre {
@@ -154,7 +191,7 @@ aside#sidebar {
 
 .article-list {
   article {
-    margin: 0 0 16px;
+    margin: 0 0 36px;
   }
 }
 
