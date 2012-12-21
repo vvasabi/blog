@@ -4,6 +4,15 @@ ErrorDocument 404 /404.html
 RewriteEngine on
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
+
+# Slug changes
 RewriteRule ^2011/04/processing\.js-touch-events$ blog/2011/04/processing-js-touch-events [R=301,QSA,L]
 RewriteRule ^2011/02/ldap-installation-on-redhat-enterprise-linux-5\.6$ blog/2011/02/ldap-installation-on-redhat-enterprise-linux-56 [R=301,QSA,L]
+
+# Map node/* to SEO url
+RewriteRule ^node/42 blog/2012/05/persist-primefaces-datatable-state-across-refresh [R=301,QSA,L]
+RewriteRule ^node/17 blog/2011/02/ldap-installation-on-redhat-enterprise-linux-56 [R=301,QSA,L]
+RewriteRule ^node/36 blog/2011/07/render-facelets-programmatically [R=301,QSA,L]
+
+# The rest...
 RewriteRule ^201[\d]/.+$ blog/$0 [R=301,QSA,L]
