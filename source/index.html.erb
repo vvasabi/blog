@@ -3,6 +3,7 @@ title: Home
 pageable: true
 per_page: 8
 hide_title: true
+disable_comments: true
 ---
 <div class="article-list">
   <% page_articles.each_with_index do |article, i| %>
@@ -21,10 +22,9 @@ hide_title: true
         </p>
       <% end %>
 
-      <%= article.summary %>
-
-      <p>
-        <%= link_to 'Read more »', article %>
+      <p class="page-links">
+        <%= link_to 'Read more', article %>
+        <%= link_to 'View Comments', article.url + '#disqus_thread' %>
       </p>
     </article>
   <% end %>
