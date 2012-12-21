@@ -66,7 +66,8 @@ h4 code {
   line-height: 1;
 }
 
-p {
+p,
+ul {
   font-size: 1em;
   line-height: 1.375;
   font-weight: 300;
@@ -87,6 +88,10 @@ p {
   strong {
     font-weight: 600;
   }
+}
+
+ul {
+  padding-left: 24px;
 }
 
 p code,
@@ -191,7 +196,46 @@ aside#sidebar {
 
 .article-list {
   article {
-    margin: 0 0 36px;
+    margin: 0 0 48px;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+}
+
+.pagination {
+  strong {
+    font-weight: 600;
+  }
+
+  ol {
+    @include inline-list;
+
+    li {
+      font-size: 1.125em;
+      font-weight: normal;
+      line-height: 1;
+
+      &:after {
+        content: ", ";
+        margin-right: 3px;
+      }
+
+      &:last-child:after {
+        content: "";
+        margin-right: 0;
+      }
+    }
+  }
+
+  .curr {
+    font-weight: 600;
+    padding-left: 4px;
+  }
+
+  a {
+    padding-left: 4px;
   }
 }
 

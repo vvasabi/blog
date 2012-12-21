@@ -1,6 +1,5 @@
 ---
 title: My LDAP Installation on RedHat Enterprise Linux 5.6
-slug: ldap-installation-on-redhat-enterprise-linux-5.6
 cover_image: /images/ldapworm.gif
 date: 2011-02-16
 tags: ldap, open source, red hat enterprise linux
@@ -95,7 +94,7 @@ Now the LDAP server is ready to be started. Just run:
 
 Running the LDAP server the first time may give you the following lines:
 
-``` bash
+``` text
 Performing database recovery to activate new settings.
 bdb_db_open: Recovery skipped in read-only mode. Run manual recovery if errors are encountered.
 ```
@@ -160,13 +159,13 @@ ou: Staff
 Again, run it with the `ldapadd` command, *e.g.*
 `ldapadd -x -D "cn=root,dc=example,dc=com" -W -f staff.ldif`.
 
-#### Adding person
+#### Adding a person
 
 This step we finally start to create users. Documentation for this step can be
 found [here](http://www.openldap.org/doc/admin24/access-control.html). Below is
 my template:
 
-```
+```text
 dn: uid=username,ou=Staff,dc=example,dc=com
 uid: username
 objectClass: person

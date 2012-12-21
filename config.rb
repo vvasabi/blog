@@ -19,8 +19,8 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 
-  # blog.paginate = true
-  # blog.per_page = 10
+  blog.paginate = true
+  blog.per_page = 8
   # blog.page_link = "page/:num"
 end
 
@@ -79,11 +79,16 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
 
+# Add syntax highlighting support
+require 'middleman-syntax'
+activate :syntax
+
 # Use GH style markdown
 set :markdown, :tables => true,
     :autolink => true,
     :gh_blockcode => true,
-    :fenced_code_blocks => true
+    :fenced_code_blocks => true,
+    :smartypants => true
 set :markdown_engine, :redcarpet
 
 # Build-specific configuration
