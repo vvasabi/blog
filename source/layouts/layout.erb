@@ -75,7 +75,7 @@
               <span class="logo-disqus">Disqus</span></a>
           <% end %>
 
-          <% if data.page.date %>
+          <% if ! request.path.include? 'index.html' %>
             <p>
               <%= link_to '« Go back', '/' %>
             </p>

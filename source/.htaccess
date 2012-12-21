@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+
+# Rewrite links...
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^2011/04/processing\.js-touch-events$ blog/2011/04/processing-js-touch-events [R=301,QSA,L]
+RewriteRule ^2011/02/ldap-installation-on-redhat-enterprise-linux-5\.6$ blog/2011/02/ldap-installation-on-redhat-enterprise-linux-56 [R=301,QSA,L]
+RewriteRule ^201[\d]/.+$ blog/$0 [R=301,QSA,L]

@@ -22,6 +22,8 @@ disable_comments: true
         </p>
       <% end %>
 
+      <%= article.summary %>
+
       <p class="page-links">
         <%= link_to 'Read more', article %>
         <%= link_to 'View Comments', article.url + '#disqus_thread' %>
