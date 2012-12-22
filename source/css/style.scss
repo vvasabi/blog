@@ -26,6 +26,7 @@
 @mixin meta-styles {
   color: #666;
   font-style: italic;
+  font-weight: normal;
   line-height: 1;
   white-space: nowrap;
 }
@@ -45,7 +46,7 @@ $highlight4: #dda;
 
 body {
   color: #444;
-  font: 1em/1 myriad-pro, sans-serif;
+  font: 300 1em/1 myriad-pro, sans-serif;
   -moz-font-feature-settings: "liga=1";
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
@@ -57,6 +58,7 @@ body {
 
 a {
   @include link_colors($highlight2, $highlight3);
+  font-weight: normal;
 }
 
 h2 {
@@ -114,7 +116,6 @@ p,
 ul {
   font-size: 1em;
   line-height: 1.375;
-  font-weight: 300;
   margin: 0 0 20px;
 
   a {
@@ -391,7 +392,6 @@ ul.article-tags {
 footer#site-footer {
   color: #666;
   font-size: 0.875em;
-  font-weight: 300;
   line-height: 1;
   text-align: center;
 
