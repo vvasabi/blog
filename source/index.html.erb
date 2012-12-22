@@ -25,14 +25,13 @@ disable_comments: true
       <%= article.summary %>
 
       <p class="page-links">
-        <% link_to article, :class => 'read-more' do %>
-          <i class="icon-book"></i> Read more
-        <% end %>
+        <i class="icon-book">
+          <%= link_to 'Read more', article, :class => 'read-more' %>
+        </i>
 
-        <% link_to article.url + '#disqus_thread',
-                   :class => 'view-comments' do %>
-          <i class="icon-comment"></i> View Comments
-        <% end %>
+        <i class="icon-comment">
+          <%= link_to 'View Comments', article.url + '#disqus_thread' %>
+        </i>
       </p>
     </article>
   <% end %>

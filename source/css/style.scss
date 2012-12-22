@@ -11,6 +11,10 @@
   }
 }
 
+$highlight1: #446644;
+$highlight2: #006611;
+$highlight3: #118833;
+
 body {
   color: #444;
   font: 1em/1 myriad-pro, sans-serif;
@@ -24,7 +28,7 @@ body {
 }
 
 a {
-  @include link_colors(#006611, #118833);
+  @include link_colors($highlight2, $highlight3);
 }
 
 h2 {
@@ -110,9 +114,17 @@ pre {
   margin: 0 0 20px;
 }
 
-i[class^=icon-] {
-  position: relative;
-  top: 2px;
+i[class^="icon-"] {
+  color: $highlight1;
+
+  li & {
+    text-align: left;
+    width: auto;
+  }
+
+  a {
+    margin-left: 3px;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -213,8 +225,12 @@ aside#sidebar {
     margin: 0 0 12px;
   }
 
-  .page-links a {
-    margin-right: 12px;
+  .page-links {
+    color: $highlight1;
+
+    a {
+      margin-right: 12px;
+    }
   }
 }
 
