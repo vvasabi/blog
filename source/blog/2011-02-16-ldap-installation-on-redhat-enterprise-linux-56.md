@@ -10,9 +10,8 @@ isn’t that straightforward. So, after spending some time both reading the
 official documentation and goolging around, I'm documenting the steps I have
 done here.
 
-**Update Aug. 11, 2011:** RedHat EL 6 uses a different config format/structure.
-[This blog post](http://www.salsaunited.net/blog/?p=74) has details on how
-configuration can be done for the release.
+**Update Aug. 11, 2011:** OpenLdap on RedHat EL 6 uses a different config
+format/structure. Instructions documented here does not apply.
 
 READMORE
 
@@ -110,8 +109,9 @@ here what I have gathered.
 #### Adding organization and organizationalRole
 
 This step creates your organization and a root organizational role.
-Documentation of this step can be found [here](http://www.openldap.org/doc/admin24/quickstart.html).
-First, create a file, called init.ldif, or whatever you wish. Use the following as the template:
+Documentation of this step can be found
+[here](http://www.openldap.org/doc/admin24/quickstart.html). First, create a
+file, called init.ldif, or whatever you wish. Use the following as the template:
 
 ```
 dn: dc=example,dc=com

@@ -8,7 +8,15 @@ Today I’m hit with the issue that Spring whines about the exception, “No Sco
 registered for scope ‘request’,” when I try to run tests with request scoped
 bean. Fortunately the fix is fairly easy.
 
+**Update Dec. 22, 2012**:
+[Spring 3.2](http://blog.springsource.org/2012/11/07/spring-framework-3-2-rc1-new-testing-features/)
+has made it possible to use `WebApplicationContext` as well as web-based scopes
+available in unit tests. The fix documented here is no longer necessary if you
+are on Spring 3.2.
+
 READMORE
+
+### Solution
 
 Discussions [here](http://stackoverflow.com/questions/2411343/request-scoped-beans-in-spring-testing)
 suggest that the missing request and session scopes can be faked by using
