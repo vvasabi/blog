@@ -17,7 +17,7 @@
   }
 }
 
-@mixin date-styles {
+@mixin meta-styles {
   color: #666;
   font-style: italic;
   line-height: 1;
@@ -187,7 +187,7 @@ section#main-content {
   }
 
   .date {
-    @include date-styles;
+    @include meta-styles;
     font-size: 0.875em;
     margin: 0 0 12px;
   }
@@ -234,8 +234,9 @@ aside#sidebar {
       margin-right: 3px;
     }
 
-    .date {
-      @include date-styles;
+    .date,
+    .meta {
+      @include meta-styles;
       font-size: 0.75em;
     }
   }
@@ -281,6 +282,10 @@ aside#sidebar {
       color: $highlight4;
       font-size: 0.75em;
       line-height: 1;
+    }
+
+    a {
+      margin-right: 0;
     }
   }
 

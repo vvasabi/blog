@@ -23,9 +23,7 @@
       <% blog.articles[0...8].each do |article| %>
         <li>
           <a href="<%= article.url %>"><%= article.title %></a>
-                  <span class="date">
-                    <%= article.date.strftime('%b %e, %Y') %>
-                  </span>
+          <span class="date"><%= article.date.strftime('%b %e, %Y') %></span>
         </li>
       <% end %>
     </ol>
@@ -40,8 +38,7 @@
         <li>
           <i class="icon-tag"></i>
           <a href="<%= tag_path tag %>"><%= tag %></a>
-
-          (<%= articles.size %>)
+          <span class="meta">(<%= articles.size %>)</span>
 
           <% if i > 10 %>
             <% break %>
