@@ -2,6 +2,13 @@
 <%= partial 'layouts/header' %>
 <section id="main-content" class="span9">
   <%= yield %>
+
+  <% if ! request.path.include? 'index.html' %>
+    <div class="back">
+      <i class="icon-arrow-left"></i>
+      <%= link_to 'Go back', '/' %>
+    </div>
+  <% end %>
 </section>
 <%= partial 'layouts/sidebar' %>
 <%= partial 'layouts/footer' %>
