@@ -1,6 +1,6 @@
 <%= partial 'layouts/header' %>
 <section id="main-content" class="span9">
-  <article>
+  <article class="post">
     <h2><%= link_to data.page.title, '/' + request.path %></h2>
 
     <div class="date">
@@ -17,12 +17,24 @@
     <% end %>
 
     <%= yield %>
-  </article>
 
-  <div class="back">
-    <i class="icon-arrow-left"></i>
-    <%= link_to 'Go back', '/' %>
-  </div>
+    <% tags = data.page.tags.split /,[\s]*/ %>
+    <% if !tags.empty? %>
+      <ul class="tags">
+        <% tags.each do |tag| %>
+          <li>
+            <i class="icon-tag"></i>
+            <a href="<%= tag_path tag %>"><%= tag %></a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="back">
+      <i class="icon-arrow-left"></i>
+      <%= link_to 'Go back', '/' %>
+    </div>
+  </article>
 
   <% if !current_page.data.disable_comments %>
     <h3>Comments</h3>

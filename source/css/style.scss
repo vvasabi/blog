@@ -201,6 +201,29 @@ section#main-content {
   }
 }
 
+article.post {
+  ul.tags {
+    @include no-bullets;
+    font-size: 0.875em;
+    margin: 12px 0 0;
+    float: right;
+
+    li {
+      display: inline;
+    }
+
+    i {
+      color: $highlight4;
+      font-size: 0.875em;
+      line-height: 1;
+    }
+
+    a {
+      margin-right: 8px;
+    }
+  }
+}
+
 aside#sidebar {
   padding-top: 12px;
 
