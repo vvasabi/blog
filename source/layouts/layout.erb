@@ -10,6 +10,7 @@
     <%= stylesheet_link_tag 'style.css', :media => 'all' %>
     <%= javascript_include_tag  'jquery-1.8.3.min' %>
     <%= javascript_include_tag  'bootstrap.min' %>
+    <%= javascript_include_tag  'script' %>
     <script type="text/javascript" src="//use.typekit.net/fed3zry.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript">
@@ -58,12 +59,8 @@
   </head>
   <body>
     <div id="wrapper" class="container">
-      <header id="site-header" class="row">
-        <h1><a href="/">BradChen.com</a></h1>
-      </header>
-
       <div class="row">
-        <section id="main-content" class="span8">
+        <section id="main-content" class="span9">
           <% if !data.page.hide_title %>
             <h2><%= link_to data.page.title, '/' + request.path %></h2>
           <% end %>
@@ -85,6 +82,12 @@
 
           <%= yield %>
 
+          <% if ! request.path.include? 'index.html' %>
+            <p>
+              <%= link_to '« Go back', '/' %>
+            </p>
+          <% end %>
+
           <% if !current_page.data.disable_comments %>
             <div id="disqus_thread"></div>
             <noscript>Please enable JavaScript to view the
@@ -93,21 +96,15 @@
             <a href="http://disqus.com" class="dsq-brlink">comments powered by
               <span class="logo-disqus">Disqus</span></a>
           <% end %>
-
-          <% if ! request.path.include? 'index.html' %>
-            <p>
-              <%= link_to '« Go back', '/' %>
-            </p>
-          <% end %>
         </section>
 
-        <aside id="sidebar" class="span3 offset1">
+        <aside id="sidebar" class="span3">
           <h2><a href="/">BradChen.com</a></h2>
 
           <section>
             <h3>About</h3>
 
-            <p>
+            <p class="avatar">
               <img src="http://www.gravatar.com/avatar/a6543df3fe96f08b76e7ed77326a345b?s=480"
                 alt="Brad Chen’s Avatar" />
             </p>
@@ -127,7 +124,7 @@
                 <li>
                   <a href="<%= article.url %>"><%= article.title %></a>
                   <span class="date">
-                    <%= article.date.strftime('%b %e, %Y') %>
+                    <%= article.date.strftime('%b&nbsp;%e,&nbsp;%Y') %>
                   </span>
                 </li>
               <% end %>
@@ -137,12 +134,14 @@
           <section>
             <h3>Tags</h3>
 
-            <ol class="no-bullets">
+            <ol class="tags no-bullets">
               <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0]} %>
               <% sorted.each_with_index do |(tag, articles), i| %>
                 <li>
                   <a href="<%= tag_path tag %>"><%= tag %></a>
+
                   (<%= articles.size %>)
+
                   <% if i > 10 %>
                     <% break %>
                   <% end %>
@@ -154,9 +153,15 @@
           <section>
             <h3>Follow me on</h3>
 
-            <ul>
-              <li><a href="https://github.com/vvasabi">GitHub</a></li>
-              <li><a href="http://ca.linkedin.com/in/wasabibradchen/">LinkedIn</a></li>
+            <ul class="no-bullets">
+              <li>
+                <a href="https://github.com/vvasabi">
+                  <i class="icon-globe"></i> GitHub</a>
+              </li>
+              <li>
+                <a href="http://ca.linkedin.com/in/wasabibradchen/">
+                  <i class="icon-briefcase"></i> LinkedIn</a>
+              </li>
             </ul>
           </section>
         </aside>

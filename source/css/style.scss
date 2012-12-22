@@ -19,8 +19,12 @@ body {
   text-rendering: optimizeLegibility;
 
   @include portrait {
-    padding: 0;
+    padding: 12px 0 0;
   }
+}
+
+a {
+  @include link_colors(#006611, #118833);
 }
 
 h1 {
@@ -48,7 +52,11 @@ h3 {
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1;
-  margin: 36px 0 12px;
+  margin: 48px 0 12px;
+
+  @include portrait {
+    border-bottom: 1px solid #bbb;
+  }
 }
 
 h4 {
@@ -108,6 +116,11 @@ pre {
   margin: 0 0 20px;
 }
 
+i[class^=icon-] {
+  position: relative;
+  top: 2px;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /**
@@ -119,22 +132,6 @@ pre {
 
   @include portrait {
     padding: 0;
-  }
-}
-
-header#site-header {
-  margin: 0 0 16px;
-  display: none;
-
-  a {
-    @include unstyled-link;
-    @include link-colors(#222);
-  }
-
-  @include portrait {
-    margin: 0 0 12px;
-    padding: 0 20px;
-    display: block;
   }
 }
 
@@ -153,6 +150,7 @@ section#main-content {
   .date {
     color: #666;
     font-size: 0.875em;
+    font-style: italic;
     line-height: 1;
     margin: 0 0 12px;
   }
@@ -162,13 +160,17 @@ aside#sidebar {
   padding-top: 12px;
 
   section {
-    margin: 0 0 24px;
+    margin: 0 0 36px;
+
+    a {
+      margin-right: 3px;
+    }
 
     .date {
-      color: #888;
-      font-size: 0.875em;
+      color: #666;
+      font-size: 0.75em;
+      font-style: italic;
       line-height: 1;
-      padding-left: 4px;
     }
   }
 
@@ -182,21 +184,27 @@ aside#sidebar {
       @include unstyled-link;
       @include link-colors(#444);
     }
-
-    @include portrait {
-      display: none;
-    }
   }
 
   h3 {
     margin: 0 0 12px;
   }
 
+  li {
+    font-size: 1em;
+    line-height: 1.125;
+    margin: 0 0 12px;
+  }
+
+  .tags li {
+    margin: 0 0 6px;
+  }
+
   @include portrait {
     background: #ddd;
     padding: 20px 20px 4px;
 
-    img {
+    .avatar {
       display: none;
     }
   }
@@ -204,7 +212,7 @@ aside#sidebar {
 
 .article-list {
   article {
-    margin: 0 0 48px;
+    margin: 0 0 60px;
   }
 
   p {
@@ -214,6 +222,19 @@ aside#sidebar {
   .page-links a {
     margin-right: 12px;
   }
+}
+
+.gist .line_numbers,
+.gist .line {
+  line-height: 24px;
+}
+
+.gist .line {
+  white-space: pre;
+}
+
+#disqus_thread {
+  margin: 48px 0 24px;
 }
 
 .pagination {
@@ -274,6 +295,10 @@ footer#site-footer {
 
 .no-bullets {
   @include no-bullet;
+}
+
+ul.no-bullets {
+  padding-left: 0;
 }
 
 .text-center {
