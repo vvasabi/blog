@@ -84,9 +84,8 @@
 
           <% if ! request.path.include? 'index.html' %>
             <p>
-              <i class="icon-arrow-left">
-                <%= link_to 'Go back', '/' %>
-              </i>
+              <i class="icon-arrow-left"></i>
+              <%= link_to 'Go back', '/' %>
             </p>
           <% end %>
 
@@ -126,7 +125,7 @@
                 <li>
                   <a href="<%= article.url %>"><%= article.title %></a>
                   <span class="date">
-                    <%= article.date.strftime('%b&nbsp;%e,&nbsp;%Y') %>
+                    <%= article.date.strftime('%b %e, %Y') %>
                   </span>
                 </li>
               <% end %>
@@ -140,9 +139,8 @@
               <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0]} %>
               <% sorted.each_with_index do |(tag, articles), i| %>
                 <li>
-                  <i class="icon-tag">
-                    <a href="<%= tag_path tag %>"><%= tag %></a>
-                  </i>
+                  <i class="icon-tag"></i>
+                  <a href="<%= tag_path tag %>"><%= tag %></a>
 
                   (<%= articles.size %>)
 
@@ -159,14 +157,12 @@
 
             <ul class="no-bullets">
               <li>
-                <i class="icon-github">
-                  <a href="https://github.com/vvasabi">GitHub</a>
-                </i>
+                <i class="icon-github"></i>
+                <a href="https://github.com/vvasabi">GitHub</a>
               </li>
               <li>
-                <i class="icon-linkedin">
-                  <a href="http://ca.linkedin.com/in/wasabibradchen/">LinkedIn</a>
-                </i>
+                <i class="icon-linkedin"></i>
+                <a href="http://ca.linkedin.com/in/wasabibradchen/">LinkedIn</a>
               </li>
             </ul>
           </section>

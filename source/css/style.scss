@@ -17,6 +17,13 @@
   }
 }
 
+@mixin date-styles {
+  color: #666;
+  font-style: italic;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 /**
  * Variables
  */
@@ -136,11 +143,6 @@ pre {
 i[class^="icon-"] {
   color: $highlight1;
 
-  li & {
-    text-align: left;
-    width: auto;
-  }
-
   a {
     margin-left: 3px;
   }
@@ -185,10 +187,8 @@ section#main-content {
   }
 
   .date {
-    color: #666;
+    @include date-styles;
     font-size: 0.875em;
-    font-style: italic;
-    line-height: 1;
     margin: 0 0 12px;
   }
 }
@@ -204,10 +204,8 @@ aside#sidebar {
     }
 
     .date {
-      color: #666;
+      @include date-styles;
       font-size: 0.75em;
-      font-style: italic;
-      line-height: 1;
     }
   }
 
@@ -239,7 +237,13 @@ aside#sidebar {
 
   .tags {
     li {
+      text-indent: -24px;
       margin: 0 0 8px;
+      padding-left: 24px;
+
+      * {
+        text-indent: 0;
+      }
     }
 
     i[class^="icon-"]:before {
@@ -272,6 +276,7 @@ aside#sidebar {
     color: $highlight1;
 
     a {
+      font-style: italic;
       margin-right: 12px;
     }
   }
@@ -291,8 +296,10 @@ aside#sidebar {
 }
 
 .pagination {
+  font-style: italic;
+
   strong {
-    font-weight: 600;
+    font-weight: normal;
   }
 
   ol {

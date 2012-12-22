@@ -25,13 +25,11 @@ disable_comments: true
       <%= article.summary %>
 
       <p class="page-links">
-        <i class="icon-book">
-          <%= link_to 'Read more', article, :class => 'read-more' %>
-        </i>
+        <i class="icon-book"></i>
+        <%= link_to 'Read more', article, :class => 'read-more' %>
 
-        <i class="icon-comment">
-          <%= link_to 'View Comments', article.url + '#disqus_thread' %>
-        </i>
+        <i class="icon-comment"></i>
+        <%= link_to 'View Comments', article.url + '#disqus_thread' %>
       </p>
     </article>
   <% end %>
@@ -39,7 +37,7 @@ disable_comments: true
 
 <% if paginate %>
   <div class="pagination">
-    <strong>Go to page:</strong>
+    <strong>Go to page</strong>
     <ol>
       <% for i in 1..num_pages %>
         <li>
