@@ -80,22 +80,22 @@ Open your xhtml page, and do the following.
 
 That’s it! Enjoy.
 
-**Edit May 22, 2012**: The code above is broken in PrimeFaces 3.3.RC1. DataTable
+**Edit May 22, 2012:** The code above is broken in PrimeFaces 3.3.RC1. DataTable
 appears to have a different lifecycle and does initialization at a different
 rendering stage. Fix has been made, but I will release it after I have more time
 to test and refine it.
 
-**Edit May 23, 2012**: The code has been updated. This version is compatible
+**Edit May 23, 2012:** The code has been updated. This version is compatible
 with both PrimeFaces 3.2 and 3.3.RC1. Note that somehow `<p:dataTable>` in
 3.3.RC1 requires `lazy="true"` attribute to be set again. It needs to be added
 for sorting to work.
 
-**Edit May 29, 2012**: As expected, the same code that works for 3.3.RC1 works
+**Edit May 29, 2012:** As expected, the same code that works for 3.3.RC1 works
 for 3.3 Final.
 
-**Edit Sep. 4, 2012**: Code that works for 3.4 has been added.
+**Edit Sep. 4, 2012:** Code that works for 3.4 has been added.
 
-**Edit Dec. 4, 2012**: A [forum post](http://forum.primefaces.org/viewtopic.php?f=3&t=26783)
+**Edit Dec. 4, 2012:** A [forum post](http://forum.primefaces.org/viewtopic.php?f=3&t=26783)
 and an [issue](http://code.google.com/p/primefaces/issues/detail?id=4965) have
 been created. Let’s see if PrimeFaces will create an official and cleaner way to
 achieve this effect.
