@@ -1,5 +1,6 @@
 ---
 title: Fix Issue with Spring Web Scopes in Tests
+cover_image: /images/springframework.png
 date: 2012-01-06
 tags: java, spring
 ---

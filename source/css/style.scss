@@ -55,7 +55,7 @@ h3 {
   margin: 48px 0 12px;
 
   @include portrait {
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ccc;
   }
 }
 
@@ -201,7 +201,7 @@ aside#sidebar {
   }
 
   @include portrait {
-    background: #ddd;
+    background: #eee;
     padding: 20px 20px 4px;
 
     .avatar {
@@ -280,7 +280,7 @@ footer#site-footer {
   text-align: center;
 
   @include portrait {
-    background: #888;
+    background: #999;
     color: #eee;
     font-weight: normal;
     padding: 4px 20px;

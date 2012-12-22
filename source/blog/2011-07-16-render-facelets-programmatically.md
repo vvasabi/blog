@@ -1,5 +1,6 @@
 ---
 title: Render Facelets Programmatically
+cover_image: /images/jsf-logo.png
 date: 2011-07-16
 tags: jsf, open source
 ---

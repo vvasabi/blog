@@ -1,5 +1,6 @@
 ---
 title: Persist PrimeFaces DataTable State Across Requests
+cover_image: /images/primefaces-logo.png
 date: 2012-05-14
 tags: java, jsf, primefaces
 ---
