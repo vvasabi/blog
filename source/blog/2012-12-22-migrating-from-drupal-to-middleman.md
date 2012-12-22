@@ -67,8 +67,9 @@ during the migration:
   generated template was quite lacking. For example, I would like to have a
   pagination with page numbers listed. I would like to have tags to be sorted by
   the number of posts and by alphabets. The markup could also use a bit of
-  refactoring. Fortunately, static site generators are tailored towrads
-  developers for a reason.
+  refactoring. I would like to use periods (.) in the URL, but this does not
+  seem to be possible at the moment. Fortunately, static site generators are
+  tailored towrads developers for a reason.
 * **`middleman server` crashed a few times.** This happened mostly during making
   significant changes to eRuby layout files and introducing Ruby syntax errors.
   Since I am a Ruby beginner, I can’t really blame Middleman for this, but this
@@ -99,6 +100,10 @@ To build this site, I used to following gems/frameworks/libraries/platforms:
   for hosting of source repository.
 * [Jenkins](http://jenkins-ci.org) for
   [continuous delivery](http://continuousdelivery.com).
+* [Disqus](http://disqus.com) for commenting. Without it, commenting would not
+  be possible for a static website.
+* [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) to
+  map old URLs to new ones.
 
 ### Conclusion
 
@@ -119,4 +124,5 @@ solved, then I will for sure see more uses of static site generators elsewhere.
 With the awesome static site generator, more blog posts will keep coming.
 
 [0]: I uninstalled four copies of Eclipse for good and freed up 2 GB of disk
-     space from my SSD. More details about this story to come in a future post.
+     space from my SSD. More details about this story will come in a future
+     post.
