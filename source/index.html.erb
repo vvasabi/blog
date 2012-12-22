@@ -1,7 +1,7 @@
 ---
 title: Home
 pageable: true
-per_page: 8
+per_page: 6
 ---
 <div class="article-list">
   <% page_articles.each do |article| %>
@@ -22,13 +22,24 @@ per_page: 8
 
       <%= article.summary %>
 
-      <p class="page-links">
+      <% if !article.tags.empty? %>
+        <ul class="article-tags">
+          <% article.tags.each do |tag| %>
+            <li>
+              <i class="icon-tag"></i>
+              <a href="<%= tag_path tag %>"><%= tag %></a>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <div class="page-links">
         <i class="icon-book"></i>
         <%= link_to 'Read more', article, :class => 'read-more' %>
 
         <i class="icon-comment"></i>
         <%= link_to 'View Comments', article.url + '#disqus_thread' %>
-      </p>
+      </div>
     </article>
   <% end %>
 </div>

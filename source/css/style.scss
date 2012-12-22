@@ -60,6 +60,11 @@ h2 {
   line-height: 1;
   margin: 0 0 12px;
 
+  i.icon-tag {
+    font-size: 0.75em;
+    line-height: 1;
+  }
+
   @include portrait {
     font-size: 2em;
     line-height: 1;
@@ -201,29 +206,6 @@ section#main-content {
   }
 }
 
-article.post {
-  ul.tags {
-    @include no-bullets;
-    font-size: 0.875em;
-    margin: 12px 0 0;
-    float: right;
-
-    li {
-      display: inline;
-    }
-
-    i {
-      color: $highlight4;
-      font-size: 0.875em;
-      line-height: 1;
-    }
-
-    a {
-      margin-right: 8px;
-    }
-  }
-}
-
 aside#sidebar {
   padding-top: 12px;
 
@@ -299,17 +281,35 @@ aside#sidebar {
   }
 }
 
-.article-list {
-  article {
-    margin: 0 0 60px;
+ul.article-tags {
+  @include no-bullets;
+  font-size: 0.875em;
+  margin: 12px 0 0;
+  float: right;
+
+  li {
+    display: inline;
   }
 
-  p {
-    margin: 0 0 12px;
+  i {
+    color: $highlight4;
+    font-size: 0.875em;
+    line-height: 1;
+  }
+
+  a {
+    margin-right: 8px;
+  }
+}
+
+.article-list {
+  article {
+    margin: 0 0 72px;
   }
 
   .page-links {
     color: $highlight1;
+    margin-top: 26px;
 
     a {
       font-style: italic;

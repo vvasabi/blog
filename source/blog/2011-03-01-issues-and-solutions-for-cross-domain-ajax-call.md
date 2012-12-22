@@ -2,7 +2,7 @@
 title: Issues and Solutions for Cross-Domain Ajax Calls
 cover_image: /images/jquery-and-rest.png
 date: 2011-03-01
-tags: ajax, java, javascript, jquery, open source, rest, resteasy
+tags: java, javascript, open source
 ---
 Recently I have been building a small chat room application, using
 [jQuery](http://jquery.org/) for Ajax and

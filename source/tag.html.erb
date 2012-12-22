@@ -1,16 +1,16 @@
 ---
+title: Tag Index
 pageable: true
 per_page: 12
 ---
-<h2>Articles tagged “<%= tagname %>”</h2>
+<h2><i class="icon-tag"></i> <%= tagname %></h2>
 
 <ol class="tag-list no-bullets">
   <% page_articles.each_with_index do |article, i| %>
     <li>
+      <i class="icon-file"></i>
       <%= link_to article.title, article %>
-      <span class="date">
-        <%= article.date.strftime('%b&nbsp;%e,&nbsp;%Y') %>
-      </span>
+      <span class="date"><%= article.date.strftime('%b %e, %Y') %></span>
     </li>
   <% end %>
 </ol>
