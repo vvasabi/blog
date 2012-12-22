@@ -11,9 +11,18 @@
   }
 }
 
-$highlight1: #446644;
-$highlight2: #006611;
-$highlight3: #118833;
+/**
+ * Variables
+ */
+
+$highlight1: #464;
+$highlight2: #061;
+$highlight3: #183;
+$highlight4: #dda;
+
+/**
+ * Global styles
+ */
 
 body {
   color: #444;
@@ -153,6 +162,18 @@ section#main-content {
     padding: 0 20px;
   }
 
+  .tag-list {
+    margin: 24px 0 36px;
+
+    a {
+      margin-right: 3px;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+  }
+
   .date {
     color: #666;
     font-size: 0.875em;
@@ -202,8 +223,16 @@ aside#sidebar {
     margin: 0 0 12px;
   }
 
-  .tags li {
-    margin: 0 0 6px;
+  .tags {
+    li {
+      margin: 0 0 8px;
+    }
+
+    i[class^="icon-"]:before {
+      color: $highlight4;
+      font-size: 0.75em;
+      line-height: 1;
+    }
   }
 
   @include portrait {

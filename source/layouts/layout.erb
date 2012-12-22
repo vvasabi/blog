@@ -140,7 +140,9 @@
               <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0]} %>
               <% sorted.each_with_index do |(tag, articles), i| %>
                 <li>
-                  <a href="<%= tag_path tag %>"><%= tag %></a>
+                  <i class="icon-tag">
+                    <a href="<%= tag_path tag %>"><%= tag %></a>
+                  </i>
 
                   (<%= articles.size %>)
 
