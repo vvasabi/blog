@@ -179,6 +179,9 @@ section#main-content {
 
   h2 a {
     @include link-colors(#444);
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   @include portrait {
@@ -232,13 +235,13 @@ aside#sidebar {
 
   h2 {
     font-size: 1.75em;
-    font-weight: 600;
     line-height: 1;
     margin: 0 0 24px;
 
     a {
       @include unstyled-link;
       @include link-colors(#444);
+      font-weight: 600;
     }
 
     @include narrow-landscape {
