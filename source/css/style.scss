@@ -11,8 +11,14 @@
   }
 }
 
-@mixin medium-landscape {
+@mixin narrow-landscape {
   @media (max-width: 979px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin narrow {
+  @media (max-width: 979px) {
     @content;
   }
 }
@@ -234,7 +240,7 @@ aside#sidebar {
       @include link-colors(#444);
     }
 
-    @include medium-landscape {
+    @include narrow-landscape {
       font-size: 1.5em;
     }
   }
@@ -285,6 +291,7 @@ ul.article-tags {
   @include no-bullets;
   font-size: 0.875em;
   margin: 12px 0 0;
+  padding-left: 0;
   float: right;
 
   li {
@@ -300,6 +307,15 @@ ul.article-tags {
   a {
     margin-right: 8px;
   }
+
+  @include narrow {
+    text-align: left;
+    float: none;
+
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 .article-list {
@@ -314,6 +330,14 @@ ul.article-tags {
     a {
       font-style: italic;
       margin-right: 12px;
+    }
+  }
+
+  ul.article-tags {
+    margin-top: 4px;
+
+    @include narrow {
+      display: none;
     }
   }
 }
