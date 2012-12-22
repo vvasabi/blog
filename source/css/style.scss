@@ -191,6 +191,14 @@ section#main-content {
     font-size: 0.875em;
     margin: 0 0 12px;
   }
+
+  .back {
+    margin: 36px 0 48px;
+
+    a {
+      font-style: italic;
+    }
+  }
 }
 
 aside#sidebar {
@@ -289,10 +297,6 @@ aside#sidebar {
 
 .gist .line {
   white-space: pre;
-}
-
-#disqus_thread {
-  margin: 48px 0 24px;
 }
 
 .pagination {
