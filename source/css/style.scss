@@ -11,6 +11,12 @@
   }
 }
 
+@mixin medium-width {
+  @media (max-width: 979px) and (min-width: 768px) {
+    @content;
+  }
+}
+
 /**
  * Variables
  */
@@ -210,6 +216,10 @@ aside#sidebar {
     a {
       @include unstyled-link;
       @include link-colors(#444);
+    }
+
+    @include medium-width {
+      font-size: 1.5em;
     }
   }
 
