@@ -92,8 +92,10 @@ To build this site, I used to following gems/frameworks/libraries/platforms:
 * [Typekit](https://typekit.com) for the
   [Myriad Pro](https://typekit.com/fonts/myriad-pro) fonts.
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/) for responsive grid
-  layout and  CSS goodies.
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) for the icons.
+  layout and CSS goodies.
+* <s>[Font Awesome](http://fortawesome.github.com/Font-Awesome/)</s>
+  [Entypo](http://www.entypo.com), [IcoMoon](http://icomoon.io/#icons) and
+  [IcoMoon App](http://icomoon.io/#app-features) for the icons.
 * [IntelliJ](http://www.jetbrains.com/idea/) and [vim](http://www.vim.org) for
   building and writing everything.
 * [git](http://git-scm.com) for source control and [GitHub](https://github.com)

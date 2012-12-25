@@ -4,6 +4,7 @@
 
 @import "compass/typography/links";
 @import "compass/typography/lists";
+@import "icons";
 
 @mixin portrait {
   @media (max-width: 767px) {
@@ -38,7 +39,7 @@
 $highlight1: #464;
 $highlight2: #061;
 $highlight3: #183;
-$highlight4: #dda;
+$highlight4: #cc9;
 
 /**
  * Global styles
@@ -54,6 +55,16 @@ body {
   @include portrait {
     padding: 12px 0 0;
   }
+}
+
+::selection {
+  background: $highlight3;
+  color: white;
+}
+
+::-moz-selection {
+  background: $highlight3;
+  color: white;
 }
 
 a {
