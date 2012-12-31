@@ -49,11 +49,11 @@ an existing Tomcat installation, just make a copy of it. Otherwise, download it
 #### a. Install Required Jars
 
 For each copy, download the following jars and install them to the
-`tomcat_installation/lib` directory:
+`tomcat_dir/lib` directory:
 
-* **memcached-session-manager-x.y.z.jar((, [available
+* **memcached-session-manager-x.y.z.jar**, [available
   here](http://code.google.com/p/memcached-session-manager/downloads/list)
-* **memcached-session-manager-tc7-x.y.z.jar** (for Tomcat 7) or
+* **memcached-session-manager-tc7-x.y.z.jar** (for Tomcat 7) or<br />
   **memcached-session-manager-tc6-x.y.z.jar** (for Tomcat 6), [also available
   here](http://code.google.com/p/memcached-session-manager/downloads/list)
 * **spymemcached-x.y.z.jar**, [available
@@ -64,7 +64,7 @@ At the time of this writing, the latest version of memcached-session-manager is
 
 #### b. Tomcat Configurations
 
-For each copy, open `tomcat_installation/conf/context.xml`, and add the
+For each copy, open `tomcat_dir/conf/context.xml`, and add the
 following lines inside the `<Context>` tag:
 
 ``` xml
@@ -78,7 +78,7 @@ and/or listens on a different port, change the value in `memcachedNodes`.
 Otherwise, the setting here are the defaults of the memcached instance to be
 installed in the step below.
 
-Open `tomcat_installation/conf/server.xml`, look for the following lines:
+Open `tomcat_dir/conf/server.xml`, look for the following lines:
 
 ``` xml
 <Server port="8005" ...>
@@ -93,7 +93,7 @@ optional, but I would also disable the HTTP/1.1 connector by commenting out its
 `<Connector>` tag, as the setup documented here only requires the AJP connector
 to be enabled.
 
-Finally, look for this line, also in `tomcat_installation/conf/server.xml`:
+Finally, look for this line, also in `tomcat_dir/conf/server.xml`:
 
 ``` xml
 <Engine name="Catalina" defaultHost="localhost" ...>
@@ -139,13 +139,11 @@ ProxyPass /app/ balancer://cluster/app/ stickysession=JSESSIONID|jsessionid
 ```
 
 Note that the `BalancerMember` lines point to the ports and `jvmRoute`s
-configured in step 1.
-
-This step sets up a load balancer that dispatches web requests to the two Tomcat
-installation. When one of the Tomcat instance gets shutdown, requests will be
-served by the other one that is still up. As a result, user does not experience
-downtime when one of the Tomcat instances is taken down for maintenance or
-application redeployment.
+configured in step 1. This step sets up a load balancer that dispatches web
+requests to the two Tomcat installation. When one of the Tomcat instance gets
+shutdown, requests will be served by the other one that is still up. As a
+result, user does not experience downtime when one of the Tomcat instances is
+taken down for maintenance or application redeployment.
 
 This step also sets up sticky session. What this means is that, if user begins
 session with instance 1, she would be served by instance 1 throughout the entire

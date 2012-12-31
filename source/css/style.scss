@@ -6,6 +6,11 @@
 @import "compass/typography/lists";
 @import "icons";
 
+$heading-font-family: 'myriad-pro', sans-serif;
+$meta-font-family: 'myriad-pro', sans-serif;
+$copy-font-family: 'adelle', sans-serif;
+$code-font-family: 'Courier', monospace;
+
 @mixin portrait {
   @media (max-width: 767px) {
     @content;
@@ -27,7 +32,6 @@
 @mixin meta-styles {
   color: #666;
   font-style: italic;
-  font-weight: normal;
   line-height: 1;
   white-space: nowrap;
 }
@@ -46,8 +50,8 @@ $highlight4: #cc9;
  */
 
 body {
-  color: #444;
-  font: 300 1em/1 myriad-pro, sans-serif;
+  color: #555;
+  font: 1em/1 $meta-font-family;
   -moz-font-feature-settings: "liga=1";
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
@@ -69,13 +73,21 @@ body {
 
 a {
   @include link_colors($highlight2, $highlight3);
-  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
 }
 
 h2 {
   color: #333;
   font-size: 2.25em;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 1;
   margin: 0 0 12px;
 
@@ -85,7 +97,8 @@ h2 {
   }
 
   @include portrait {
-    font-size: 2em;
+    font-size: 1.75em;
+    font-weight: normal;
     line-height: 1;
   }
 }
@@ -94,7 +107,7 @@ h3 {
   border-bottom: 1px solid #ddd;
   color: #444;
   font-size: 1.375em;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 1;
   margin: 48px 0 12px;
 
@@ -104,7 +117,8 @@ h3 {
 }
 
 h4 {
-	font-size: 1.125em;
+  color: #444;
+	font-size: 1.25em;
 	font-weight: 600;
 	line-height: 1.25;
 	margin: 36px 0 12px;
@@ -126,24 +140,30 @@ h4 code {
 p,
 ul {
   font-size: 1em;
-  line-height: 1.375;
-  margin: 0 0 20px;
+  line-height: 1.5;
+  margin: 0 0 24px;
 
   a {
     font-weight: normal;
   }
 
   code {
-    font-size: 0.75em;
-    font-weight: normal;
+    color: #444;
+    font-size: 0.875em;
+    font-family: $code-font-family;
     line-height: 1.125;
     margin: 0 3px;
     padding: 1px 3px;
   }
 
   strong {
+    color: #333;
     font-weight: 600;
   }
+}
+
+p + ul {
+  margin: -16px 0 30px;
 }
 
 ul {
@@ -151,16 +171,20 @@ ul {
 }
 
 li {
-  margin-bottom: 6px;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 3px;
 }
 
-p code,
-ul code {
-  color: #333;
+p + .highlight {
+  margin: -16px 0 24px;
 }
 
 pre {
-  margin: 0 0 20px;
+  font-family: $code-font-family;
+  font-size: 0.875em;
+  line-height: 1.375;
+  margin: 0 0 24px;
 }
 
 i[class^="icon-"] {
@@ -189,26 +213,17 @@ section#main-content {
   margin-bottom: 24px;
 
   h2 a {
-    @include link-colors(#444);
+    @include link-colors(#444, #555);
     &:hover {
       text-decoration: none;
     }
   }
 
-  @include portrait {
-    margin: 0 0 24px;
-    padding: 0 20px;
-  }
-
-  .tag-list {
-    margin: 24px 0 36px;
-
-    a {
-      margin-right: 3px;
-    }
-
-    li {
-      margin: 0 0 8px;
+  article {
+    p,
+    ol,
+    ul {
+      font-family: $copy-font-family;
     }
   }
 
@@ -225,10 +240,52 @@ section#main-content {
       font-style: italic;
     }
   }
+
+  @include portrait {
+    margin: 0 0 24px;
+    padding: 0 20px;
+  }
+}
+
+section#main-content ul.article-tags,
+ul.article-tags {
+  @include no-bullets;
+  font-family: $meta-font-family;
+  font-size: 0.875em;
+  margin: 2px 0 0;
+  padding-left: 0;
+  float: right;
+
+  li {
+    display: inline;
+  }
+
+  i {
+    color: $highlight4;
+    font-size: 0.875em;
+    line-height: 1;
+  }
+
+  a {
+    margin-right: 8px;
+  }
+
+  @include narrow {
+    text-align: left;
+    float: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+section#main-content article.post ul.article-tags {
+  margin-top: 12px;
 }
 
 aside#sidebar {
-  padding-top: 12px;
+  padding-top: 7px;
 
   section {
     margin: 0 0 36px;
@@ -261,36 +318,42 @@ aside#sidebar {
   }
 
   h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1;
     margin: 0 0 12px;
+  }
+
+  p {
+    color: #888;
+    font-size: 0.875em;
+    line-height: 1.25;
   }
 
   li {
     font-size: 1em;
     line-height: 1.125;
-    margin: 0 0 12px;
+    margin: 0 0 16px;
   }
 
   .avatar {
     text-align: center;
+    margin: 0 0 8px;
 
     img {
       max-width: 200px;
 
-      @include narrow {
+      @include narrow-landscape {
         max-width: 100%;
       }
-    }
-
-    @include portrait {
-      display: none;
     }
   }
 
   .tags {
     li {
-      text-indent: -24px;
+      text-indent: -16px;
       margin: 0 0 8px;
-      padding-left: 24px;
+      padding-left: 16px;
 
       * {
         text-indent: 0;
@@ -311,37 +374,6 @@ aside#sidebar {
   @include portrait {
     background: #eee;
     padding: 20px 20px 4px;
-  }
-}
-
-ul.article-tags {
-  @include no-bullets;
-  font-size: 0.875em;
-  margin: 12px 0 0;
-  padding-left: 0;
-  float: right;
-
-  li {
-    display: inline;
-  }
-
-  i {
-    color: $highlight4;
-    font-size: 0.875em;
-    line-height: 1;
-  }
-
-  a {
-    margin-right: 8px;
-  }
-
-  @include narrow {
-    text-align: left;
-    float: none;
-
-    li {
-      display: inline-block;
-    }
   }
 }
 
@@ -424,7 +456,6 @@ footer#site-footer {
   @include portrait {
     background: #999;
     color: #eee;
-    font-weight: normal;
     padding: 4px 20px;
   }
 }
