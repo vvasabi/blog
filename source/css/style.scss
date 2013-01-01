@@ -8,8 +8,8 @@
 
 $heading-font-family: 'myriad-pro', sans-serif;
 $meta-font-family: 'myriad-pro', sans-serif;
-$copy-font-family: 'adelle', sans-serif;
-$code-font-family: 'Courier', monospace;
+$copy-font-family: 'source-sans-pro', sans-serif;
+$code-font-family: 'source-code-pro', 'monaco', 'menlo', monospace;
 
 @mixin portrait {
   @media (max-width: 767px) {

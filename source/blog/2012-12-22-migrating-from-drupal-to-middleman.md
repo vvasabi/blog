@@ -90,8 +90,7 @@ To build this site, I used to following gems/frameworks/libraries/platforms:
   [GitHub-Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
   for page content.
 * [Typekit](https://typekit.com) for the
-  [Myriad Pro](https://typekit.com/fonts/myriad-pro) and
-  [Adelle](https://typekit.com/fonts/adelle) fonts.
+  [Myriad Pro](https://typekit.com/fonts/myriad-pro) fonts.
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/) for responsive grid
   layout and CSS goodies.
 * <s>[Font Awesome](http://fortawesome.github.com/Font-Awesome/)</s>
