@@ -7,8 +7,8 @@ tags: open source, tomcat, memcached, java, apache
 As a requirement for [Continuous Delivery](http://continuousdelivery.com),
 changes to applications should be deployed as frequently as possible. GitHub is
 [a well-known example](https://github.com/blog/1241-deploying-at-github): on
-their “busiest day,” GitHub “saw 563 builds and 175 deploys.” To achieve this
-with a web application, zero-downtime deployment needs to be done to avoid
+their “busiest day,” GitHub “saw 563 builds and 175 deploys.” To do this with
+a Java web application, zero-downtime deployment needs to be done to avoid
 service disruption.
 
 To achieve zero-downtime deployment, there are several solutions. Both
@@ -172,7 +172,7 @@ Deploy any web applications that use sessions onto both Tomcat installations.
 Start Tomcat instances, Apache and memcached. Open the web address proxied by
 Apache in a browser. Check the cookies set. With Chrome, this can be done with
 the built-in Developer Tools, as the screenshot above shows. In my case, the
-JSESSIONID value reveals that my current Tomcat instance for the session is
+`JSESSIONID` value reveals that my current Tomcat instance for the session is
 `jvm1`. Find out which instance is used to serve you, and shut it down. Refresh
 web browser, and the cookie value should indicate that the other Tomcat instance
 is taking over. Check if session values set by the application remain. For
@@ -186,6 +186,19 @@ with memcached and Apache (or any other application load balancer), it is
 possible to perform round-robin deployments of web applications on Tomcat with
 zero downtime. This capability allows us to achieve continuous delivery and
 frequently push out new features.
+
+### Updates
+
+**Update Jan. 1, 2013**: To allow Tomcat to shut down gracefully, _i.e._
+let existing requests finish first, the `unloadDelay` attribute may be set to
+give Tomcat the time to complete fulfilling existing requests. This attribute
+may be set in the `tomcat_dir/conf/context.xml` file. For example, the
+declaration below will give Tomcat 30 seconds to finish off with existing
+requests and then shut down.
+
+``` xml
+<Context unloadDelay="30000">
+```
 
 ### References
 
