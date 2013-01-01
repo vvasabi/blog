@@ -194,7 +194,7 @@ let existing requests finish first, the `unloadDelay` attribute may be set to
 give Tomcat the time to complete fulfilling existing requests. This attribute
 may be set in the `tomcat_dir/conf/context.xml` file. For example, the
 declaration below will give Tomcat 30 seconds to finish off with existing
-requests and then shut down.
+requests and then shut down:
 
 ``` xml
 <Context unloadDelay="30000">
