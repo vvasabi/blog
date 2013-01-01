@@ -6,10 +6,28 @@
 @import "compass/typography/lists";
 @import "icons";
 
+/**
+ * Variables
+ */
+
+$copy-colour: #333;
+$alt-copy-colour: #555;
+$emphasis-colour: #222;
+$heading-colour: #333;
+
+$highlight1: #464;
+$highlight2: #061;
+$highlight3: #183;
+$highlight4: #cc9;
+
 $heading-font-family: 'myriad-pro', sans-serif;
 $meta-font-family: 'myriad-pro', sans-serif;
 $copy-font-family: 'source-sans-pro', sans-serif;
 $code-font-family: 'source-code-pro', 'monaco', 'menlo', monospace;
+
+/**
+ * Mix-ins
+ */
 
 @mixin portrait {
   @media (max-width: 767px) {
@@ -30,27 +48,18 @@ $code-font-family: 'source-code-pro', 'monaco', 'menlo', monospace;
 }
 
 @mixin meta-styles {
-  color: #666;
+  color: $alt-copy-colour;
   font-style: italic;
   line-height: 1;
   white-space: nowrap;
 }
 
 /**
- * Variables
- */
-
-$highlight1: #464;
-$highlight2: #061;
-$highlight3: #183;
-$highlight4: #cc9;
-
-/**
  * Global styles
  */
 
 body {
-  color: #555;
+  color: $copy-colour;
   font: 1em/1 $meta-font-family;
   -moz-font-feature-settings: "liga=1";
   font-variant-ligatures: common-ligatures;
@@ -85,7 +94,7 @@ h6 {
 }
 
 h2 {
-  color: #333;
+  color: $heading-colour;
   font-size: 2.25em;
   font-weight: 600;
   line-height: 1;
@@ -105,7 +114,7 @@ h2 {
 
 h3 {
   border-bottom: 1px solid #ddd;
-  color: #444;
+  color: $heading-colour;
   font-size: 1.75em;
   font-weight: normal;
   line-height: 1;
@@ -117,7 +126,7 @@ h3 {
 }
 
 h4 {
-  color: #444;
+  color: $heading-colour;
 	font-size: 1.25em;
 	font-weight: 600;
 	line-height: 1.25;
@@ -140,7 +149,7 @@ h4 code {
 p,
 ul {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.375;
   margin: 0 0 24px;
 
   a {
@@ -148,7 +157,7 @@ ul {
   }
 
   code {
-    color: #444;
+    color: $copy-colour;
     font-size: 0.875em;
     font-family: $code-font-family;
     line-height: 1.125;
@@ -157,7 +166,7 @@ ul {
   }
 
   strong {
-    color: #333;
+    color: $emphasis-colour;
     font-weight: 600;
   }
 }
@@ -172,7 +181,7 @@ ul {
 
 li {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.375;
   margin-bottom: 3px;
 }
 
@@ -213,7 +222,7 @@ section#main-content {
   margin-bottom: 24px;
 
   h2 a {
-    @include link-colors(#444, #555);
+    @include link-colors($heading-colour, $emphasis-colour);
     &:hover {
       text-decoration: none;
     }
@@ -308,7 +317,7 @@ aside#sidebar {
 
     a {
       @include unstyled-link;
-      @include link-colors(#444);
+      @include link-colors($heading-colour);
       font-weight: 600;
     }
 
@@ -324,7 +333,7 @@ aside#sidebar {
   }
 
   p {
-    color: #888;
+    color: $alt-copy-colour;
     font-size: 0.875em;
     line-height: 1.25;
   }
