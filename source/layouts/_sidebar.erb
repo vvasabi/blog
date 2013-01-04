@@ -18,10 +18,11 @@
   <section>
     <h3>Recent Posts</h3>
 
-    <ol class="no-bullets">
+    <ol class="recent-posts no-bullets">
       <% blog.articles[0...8].each do |article| %>
         <li>
-          <a href="<%= article.url %>"><%= article.title %></a>
+          <i class="icon-file"></i>
+          <%= link_to article.title, article %>
           <span class="date"><%= article.date.strftime('%b %e, %Y') %></span>
         </li>
       <% end %>

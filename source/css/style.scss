@@ -13,7 +13,9 @@
 $copy-colour: #333;
 $alt-copy-colour: #555;
 $emphasis-colour: #222;
-$heading-colour: #333;
+$heading-colour: #222;
+$main-title-colour: black;
+$main-title-highlight-colour: #444;
 
 $highlight1: #464;
 $highlight2: #061;
@@ -94,13 +96,21 @@ h6 {
 }
 
 h2 {
-  color: $heading-colour;
+  color: $main-title-colour;
   font-size: 2.25em;
   font-weight: 600;
   line-height: 1;
-  margin: 0 0 12px;
+  margin: 0 0 36px;
+
+  a {
+    @include link-colors($main-title-colour, $main-title-highlight-colour);
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   i.icon-tag {
+    color: $highlight4;
     font-size: 0.75em;
     line-height: 1;
   }
@@ -221,18 +231,15 @@ i[class^="icon-"] {
 section#main-content {
   margin-bottom: 24px;
 
-  h2 a {
-    @include link-colors($heading-colour, $emphasis-colour);
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
   article {
     p,
     ol,
     ul {
       font-family: $copy-font-family;
+    }
+
+    h2 {
+      margin-bottom: 12px;
     }
   }
 
@@ -300,7 +307,7 @@ aside#sidebar {
     margin: 0 0 36px;
 
     a {
-      margin-right: 3px;
+      margin-right: 4px;
     }
 
     .date,
@@ -357,6 +364,13 @@ aside#sidebar {
     }
   }
 
+  .recent-posts {
+    li {
+      text-indent: -16px;
+      padding-left: 16px;
+    }
+  }
+
   .tags {
     li {
       text-indent: -16px;
@@ -386,6 +400,10 @@ aside#sidebar {
 }
 
 .article-list {
+  h2 {
+    margin-bottom: 12px;
+  }
+
   article {
     margin: 0 0 72px;
   }
@@ -407,6 +425,13 @@ aside#sidebar {
       display: none;
     }
   }
+}
+
+i.icon-file:before {
+  color: #444;
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: 1px;
 }
 
 .gist .line_numbers,
