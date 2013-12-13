@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'middleman', '~> 3.0.7'
+gem 'middleman-blog', '~> 3.1.1'
+gem 'middleman-core', '~> 3.0.7'
+gem 'middleman-more', '~> 3.0.7'
+gem 'middleman-syntax', '~> 1.0.1'
+gem 'redcarpet', '~> 2.2.2'

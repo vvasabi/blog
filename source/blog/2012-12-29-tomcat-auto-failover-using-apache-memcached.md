@@ -15,9 +15,10 @@ To achieve zero-downtime deployment, there are several solutions. Both
 commercial tools, such as
 [LiveRebel](http://zeroturnaround.com/software/liverebel/), and container
 features, such as Tomcat 7’s
-[parallel deployment](http://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Parallel_deployment), can make this happen. This post focuses on the
-approach that uses Apache’s auto failover feature to achieve zero-downtime
-deployment by performing round-robin updates on multiple Tomcat instances.
+[parallel deployment](http://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Parallel_deployment),
+can make this happen. This post focuses on the approach that uses Apache’s auto
+failover feature to achieve zero-downtime deployment by performing round-robin
+updates on multiple Tomcat instances.
 
 READMORE
 
@@ -61,6 +62,10 @@ For each copy, download the following jars and install them to the
 
 At the time of this writing, the latest version of memcached-session-manager is
 1.6.3 and spymemcached is 2.8.4.
+
+**Update Dec. 13, 2013**: As the comments below indicate, later versions of
+memcached-session-manager have a hard dependency on Couchbase Client, which can
+be downloaded [here](http://files.couchbase.com/maven2/couchbase/couchbase-client/1.1.4/couchbase-client-1.1.4.jar).
 
 #### b. Tomcat Configurations
 

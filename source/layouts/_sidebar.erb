@@ -33,7 +33,7 @@
     <h3>Tags</h3>
 
     <ol class="tags no-bullets">
-      <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0]} %>
+      <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0].ord} %>
       <% sorted.each_with_index do |(tag, articles), i| %>
         <li>
           <i class="icon-tag"></i>
