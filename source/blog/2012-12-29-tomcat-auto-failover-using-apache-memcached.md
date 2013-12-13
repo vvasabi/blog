@@ -205,6 +205,9 @@ requests and then shut down:
 <Context unloadDelay="30000">
 ```
 
+**Update Dec. 1, 2013**: A note about the dependency on Couchbase Client has
+been added.
+
 ### References
 
 * [memcached-session-manager setup and
