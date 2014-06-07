@@ -4,6 +4,7 @@ gem 'middleman-core', '~> 3.3.2'
 gem 'middleman-livereload', '~> 3.3.2'
 gem 'middleman-blog', '~> 3.5.3'
 gem 'middleman-syntax', '~> 2.0.0'
+gem 'nokogiri', '~> 1.6.1' # 1.6.2.* currently have issue with installation on OS X
 gem 'builder', '~> 3.2.2'
 gem 'redcarpet', '~> 3.1.2'
 gem 'therubyracer', '~> 0.12.1'

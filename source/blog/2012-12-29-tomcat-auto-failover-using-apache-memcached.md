@@ -1,5 +1,5 @@
 ---
-title: Tomcat Auto Failover using Apache & Memcached
+title: Tomcat Auto Failover using Apache &amp; Memcached
 cover_image: /images/tomcat-and-memcached.png
 date: 2012-12-29
 tags: open source, tomcat, memcached, java, apache
