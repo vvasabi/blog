@@ -3,6 +3,7 @@ title: Home
 pageable: true
 per_page: 6
 ---
+<% @original_page_data = data.page %>
 <div class="article-list">
   <% page_articles.each do |article| %>
     <article>
@@ -64,3 +65,5 @@ per_page: 6
     </ol>
   </div>
 <% end %>
+<%# Reinstate original page data altered by article.summary %>
+<%= data.store('page', @original_page_data) %>
