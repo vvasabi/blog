@@ -1,8 +1,8 @@
 ---
-title: Metadata
+title: Meta
 disable_comments: true
 ---
-## Metadata
+## Meta
 
 ### Tools
 
