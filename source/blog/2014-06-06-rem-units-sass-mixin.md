@@ -1,11 +1,11 @@
 ---
-title: Sass Mixin for Setting Font Sizes in Rem Units
+title: Sass Mixin for Setting Font Size in Rem
 cover_image: /images/logo-sass.png
 date: 2014-06-06
 tags: sass
 ---
-Here is a Sass mixin that makes setting font sizes in 
-[rem units](http://css-tricks.com/theres-more-to-the-css-rem-unit-than-font-sizing/) easy. As a
+Here is a Sass mixin that makes setting font size in 
+[rem](http://css-tricks.com/theres-more-to-the-css-rem-unit-than-font-sizing/) easy. As a
 bonus, it also provides backward compatibility for IE 8 and below that do not support rem units.
 
 READMORE
