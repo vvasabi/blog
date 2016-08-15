@@ -1,23 +1,23 @@
 <% wrap_layout :base do %>
   <section id="main-content" class="col-md-9 col-xs-12">
     <article class="post">
-      <h2><%= link_to data.page.title, '/' + request.path %></h2>
+      <h2><%= link_to current_page.data.title, '/' + current_page.path %></h2>
 
       <div class="date">
-        <%= data.page.date.strftime('%B %e, %Y') %>
+        <%= current_page.data.date.strftime('%B %e, %Y') %>
       </div>
 
       <% if current_page.data.cover_image %>
         <p class="text-center">
-          <% link_to '/' + request.path do %>
-            <%= image_tag current_page.data.cover_image, alt: data.page.title %>
+          <% link_to '/' + current_page.path do %>
+            <%= image_tag current_page.data.cover_image, alt: current_page.data.title %>
           <% end %>
         </p>
       <% end %>
 
       <%= yield %>
 
-      <% tags = data.page.tags.split /,[\s]*/ %>
+      <% tags = current_page.data.tags.split /,[\s]*/ %>
       <% if !tags.empty? %>
         <ul class="article-tags">
           <% tags.each do |tag| %>

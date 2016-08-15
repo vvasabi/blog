@@ -3,7 +3,6 @@ title: Home
 pageable: true
 per_page: 6
 ---
-<% @original_page_data = data.page %>
 <div class="article-list">
   <% page_articles.each do |article| %>
     <article>
@@ -16,7 +15,7 @@ per_page: 6
       <% if article.data.cover_image %>
         <p class="text-center">
           <% link_to article do %>
-            <%= image_tag article.data.cover_image, :alt => article.title %>
+            <%= image_tag article.data.cover_image, alt: article.title %>
           <% end %>
         </p>
       <% end %>
@@ -36,7 +35,7 @@ per_page: 6
 
       <div class="page-links">
         <i class="icon-book"></i>
-        <%= link_to 'Read more', article, :class => 'read-more' %>
+        <%= link_to 'Read more', article, class: 'read-more' %>
 
         <i class="icon-chat"></i>
         <%= link_to 'View Comments', article.url + '#disqus_thread' %>
@@ -65,5 +64,3 @@ per_page: 6
     </ol>
   </div>
 <% end %>
-<%# Reinstate original page data altered by article.summary %>
-<% data.store('page', @original_page_data) %>

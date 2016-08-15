@@ -3,7 +3,7 @@
   <section id="main-content" class="col-md-9 col-xs-12">
     <%= yield %>
 
-    <% if ! request.path.include? 'index.html' %>
+    <% if ! current_page.path.include? 'index.html' %>
       <div class="back">
         <i class="icon-reply"></i>
         <%= link_to 'Go back', '/' %>

@@ -6,7 +6,7 @@
 
 activate :blog do |blog|
   blog.prefix = 'blog'
-  blog.permalink = ':year/:month/:title'
+  blog.permalink = '{year}/{month}/{title}'
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
   blog.layout = 'blog'
@@ -28,34 +28,23 @@ page '/feed.xml', layout: false
 page '/open-source-feed.xml', layout: false
 
 # Assets
-activate :sassc
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
-set :font_dir, 'fonts'
+set :fonts_dir, 'assets'
 
 # Make external files available to Sprockets
+activate :sprockets
 bower_path = File.join(root, 'bower_components')
-sprockets.append_path File.join(bower_path, 'bourbon/app/assets/stylesheets')
-sprockets.append_path bower_path
-
 bootstrap_path = File.join(bower_path, 'bootstrap-sass/assets')
 bootstrap_fonts_path = File.join(bootstrap_path, 'fonts')
 sprockets.append_path bootstrap_fonts_path
 sprockets.append_path File.join(bootstrap_path, 'javascripts')
 sprockets.append_path File.join(bootstrap_path, 'stylesheets')
+sprockets.append_path bower_path
 
-# Import Bootstrap fonts
-Dir.foreach(File.join(bootstrap_fonts_path, 'bootstrap')) do |file|
-  next if File.directory? File.join(bootstrap_fonts_path, 'bootstrap', file)
-  sprockets.import_asset File.join('bootstrap', file) do |path|
-    File.join(config[:font_dir], path)
-  end
-end
-
-# Do not output assets at wrong paths
-ignore 'fonts/bootstrap-sass/*'
-ignore 'images/bootstrap-sass/*'
+# Included by Sprockets
+ignore 'css/vendor/*'
 
 # Add syntax highlighting support
 require 'middleman-syntax'
@@ -70,11 +59,7 @@ set :markdown, tables: true,
 set :markdown_engine, :redcarpet
 
 configure :development do
-  set :debug_assets, true
-
-  # reload page
   activate :livereload
-  config[:file_watcher_ignore] << %r{\.idea\/}
 end
 
 # Build-specific configuration
