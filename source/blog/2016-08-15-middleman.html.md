@@ -6,8 +6,8 @@ tags: open source, middleman, static site generator
 ---
 Hello world! This is my first post since 2014, and hopefully I will start blogging more again. For
 this post, I would like to talk about Middleman, a static site generator, that I have been using
-during the past 3.5 years. I use Middleman for _all_ my projects that require HTML, JavaScript and
-CSS. Here are the kinds of projects that I have used Middleman for:
+during the past 3.5 years. READMORE I use Middleman for _all_ my projects that require HTML,
+JavaScript and CSS. Here are the kinds of projects that I have used Middleman for:
 
 * This blog
 * Small and simple static websites
