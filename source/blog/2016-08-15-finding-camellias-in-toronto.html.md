@@ -29,19 +29,19 @@ receive shipments at specific times in a year.
   that were available were Mathotiana, Laura Walker, Kramer’s Supreme, Kanjiro and Stephanie Golden.
   Note that these are not the cold hardy (Zone 6) cultivars.
 * [Humber Nurseries](https://www.gardencentre.com/): I found my second camellia from this place in
-  March. They also only carry a small number of them. The cultivars that were available were Jury’s
-  Yellow, April Blush and Kramer’s Supreme. April Blush is the only cold hardy (Zone 6B) cultivar
-  developed by Dr. Clifford Parks.
+  March. They also only carried a small number of them. The cultivars that were available were
+  Jury’s Yellow, April Blush and Kramer’s Supreme. April Blush, developed by Dr. Clifford Parks, was
+  the only cold hardy (Zone 6B) cultivar available.
 * [Kim’s Nature](http://kimsnature.ca/): This is the place known to carry many oriental plant
-  species. Camellias are not exception. In July, they carried about 30 camellias. [More details are
+  species. Camellias are not exception. In July, they had about 30 plants. [More details are
   here](https://www.facebook.com/648959355176314/photos/a.648963351842581.1073741827.648959355176314/1148928105179434/?type=3).
-  I bought 5 plants from them. None of the cultivars offered were cold hardy to Zone 6.
+  I bought 5 from them, but none of the cultivars offered were cold hardy to Zone 6.
 
 Below are two places I have spoken to that do carry camellias in spring. Because I missed their
 shipments of the year, I have not bought plants from them:
 
 * [Rice Road Greenhouses and Garden Centre](http://www.millionplants.com/): This place is in
-  Welland, ON and receive camellias from BC at around March.
+  Welland, ON and receives camellias from BC at around March.
 * [South Coast Gardens](http://southcoastgardens.ca/): This place is in St. Williams, ON, opens in
   early May of the year and seems to be the only one that carries many cold hardy cultivars. The
   owner, Kevin Kavanagh, whom I spoke to briefly on the phone, appeared to have a lot of experience
