@@ -1,6 +1,5 @@
 # Ignore bundler config
 /.bundle
-/Gemfile.lock
 
 # Ignore the build directory
 /build
@@ -8,5 +7,9 @@
 # Ignore Sass' cache
 /.sass-cache
 
+# Ignore IntelliJ files
 /.idea
 /*.iml
+
+# Ignore JS dependencies managed by Bower
+/bower_components

@@ -1,17 +1,17 @@
-<aside id="sidebar" class="span3">
+<aside id="sidebar" class="col-md-3 col-xs-12">
   <h2><a href="/">BradChen.com</a></h2>
 
   <section>
     <h3>About</h3>
 
     <p class="avatar">
-      <img src="http://www.gravatar.com/avatar/a6543df3fe96f08b76e7ed77326a345b?s=480"
-       alt="Brad Chen’s Avatar" />
+      <%= image_tag 'http://www.gravatar.com/avatar/a6543df3fe96f08b76e7ed77326a345b?s=480',
+        alt: 'Brad Chen’s Gravatar' %>
     </p>
 
     <p>
-      <em>I am a software developer based in Toronto, Ontario. I build beautiful
-        websites and mobile apps using equally elegant solutions.</em>
+      <em>I am a software developer based in Toronto, Ontario. I build beautiful websites and mobile
+        apps using equally elegant solutions.</em>
     </p>
   </section>
 
@@ -21,8 +21,7 @@
     <ol class="recent-posts no-bullets">
       <% blog.articles[0...8].each do |article| %>
         <li>
-          <i class="icon-file"></i>
-          <%= link_to article.title, article %>
+          <i class="icon-file"></i> <%= link_to article.title, article %>
           <span class="date"><%= article.date.strftime('%b %e, %Y') %></span>
         </li>
       <% end %>
@@ -36,13 +35,10 @@
       <% sorted = blog.tags.sort_by{|k, v| v.size * -1000 + k[0].ord} %>
       <% sorted.each_with_index do |(tag, articles), i| %>
         <li>
-          <i class="icon-tag"></i>
-          <a href="<%= tag_path tag %>"><%= tag %></a>
+          <i class="icon-tag"></i> <a href="<%= tag_path tag %>"><%= tag %></a>
           <span class="meta">(<%= articles.size %>)</span>
 
-          <% if i > 10 %>
-            <% break %>
-          <% end %>
+          <% break if i > 10 %>
         </li>
       <% end %>
     </ol>
@@ -69,7 +65,7 @@
     <ul class="no-bullets">
       <li>
         <i class="icon-info"></i>
-        <%= link_to 'Meta', 'meta.html' %>
+        <%= link_to 'Meta', '/meta.html' %>
       </li>
     </ul>
   </section>

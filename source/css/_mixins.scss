@@ -1,0 +1,85 @@
+@import "variables";
+
+// from: https://github.com/Compass/compass/blob/stable/core/stylesheets/compass/typography/lists/_inline-list.scss
+@mixin inline-list {
+  list-style-type: none;
+
+  &, & li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}
+
+@mixin no-bullet {
+  list-style: none;
+  margin-left: 0;
+}
+
+@mixin no-bullets {
+  list-style: none;
+
+  li {
+    @include no-bullet;
+  }
+}
+
+// from: https://github.com/Compass/compass/blob/stable/core/stylesheets/compass/typography/links/_link-colors.scss
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin unstyled-link {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+@mixin portrait {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin narrow-landscape {
+  @media (max-width: 979px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin narrow {
+  @media (max-width: 979px) {
+    @content;
+  }
+}
+
+@mixin meta-styles {
+  color: $alt-copy-colour;
+  font-style: italic;
+  line-height: 1;
+  white-space: nowrap;
+}

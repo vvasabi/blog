@@ -2,63 +2,17 @@
  * Main Stylesheet
  */
 
-@import "compass/typography/links";
-@import "compass/typography/lists";
-@import "icons";
-
-/**
- * Variables
- */
-
-$copy-colour: #333;
-$alt-copy-colour: #555;
-$emphasis-colour: #222;
-$heading-colour: #222;
-$main-title-colour: black;
-$main-title-highlight-colour: #444;
-
-$highlight1: #464;
-$highlight2: #061;
-$highlight3: #183;
-$highlight4: #cc9;
-
-$heading-font-family: 'myriad-pro', sans-serif;
-$meta-font-family: 'myriad-pro', sans-serif;
-$copy-font-family: 'source-sans-pro', sans-serif;
-$code-font-family: 'source-code-pro', 'monaco', 'menlo', monospace;
-
-/**
- * Mix-ins
- */
-
-@mixin portrait {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin narrow-landscape {
-  @media (max-width: 979px) and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin narrow {
-  @media (max-width: 979px) {
-    @content;
-  }
-}
-
-@mixin meta-styles {
-  color: $alt-copy-colour;
-  font-style: italic;
-  line-height: 1;
-  white-space: nowrap;
-}
+@import "variables";
+@import "mixins";
 
 /**
  * Global styles
  */
+
+html {
+  font-size: 16px;
+  line-height: 1;
+}
 
 body {
   color: $copy-colour;
@@ -199,7 +153,8 @@ p + .highlight {
   margin: -16px 0 24px;
 }
 
-pre {
+pre,
+code {
   font-family: $code-font-family;
   font-size: 0.875em;
   line-height: 1.375;
@@ -212,6 +167,10 @@ i[class^="icon-"] {
   a {
     margin-left: 3px;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -259,7 +218,7 @@ section#main-content {
 
   @include portrait {
     margin: 0 0 24px;
-    padding: 0 20px;
+    padding: 0 2rem;
   }
 }
 
@@ -395,7 +354,7 @@ aside#sidebar {
 
   @include portrait {
     background: #eee;
-    padding: 20px 20px 4px;
+    padding: 20px 2rem 4px;
   }
 }
 
@@ -501,9 +460,6 @@ footer#site-footer {
 
 .no-bullets {
   @include no-bullet;
-}
-
-ul.no-bullets {
   padding-left: 0;
 }
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <%= stylesheet_link_tag 'vendor', 'style' %>
+    <script type="text/javascript" src="//use.typekit.net/fed3zry.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <title><%= data.page.title %> | BradChen.com</title>
+  </head>
+  <body>
+    <div id="wrapper" class="container">
+      <div class="row">
+        <%= yield %>
+        <%= partial 'layouts/sidebar' %>
+      </div>
+
+      <footer id="site-footer" class="row">
+        &copy; 2010–2016 Brad Chen
+      </footer>
+    </div>
+
+    <%= javascript_include_tag  'vendor' %>
+    <script type="text/javascript">
+      var disqus_shortname = 'bradchen';
+
+      // comment count
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0]
+        || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+
+      // actual comments
+      jQuery(function() {
+        if (!jQuery('#disqus_thread').size()) {
+          return;
+        }
+
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      });
+
+      // google analytics
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20012498-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
+          + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
