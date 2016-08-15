@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "bourbon": "^4.2.7",
     "jquery": "^2.2.4",
     "bootstrap-sass": "^3.3.7",
     "pygments": "^2.1.3"
