@@ -1,16 +1,18 @@
 ---
 title: Finding Camellias in Toronto
+cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-15
 tags: gardening, camellia
 ---
-I love camellias. This post is going to be my first post about gardening. There are many qualities
-that I really like about camellias. READMORE They produce profuse blooms of large and beautiful
-flowers during cold, gloomy seasons when few other plants are in bloom. The foliage is attractive,
-glossy and can be used to make tea. (*Camellia sinensis* is the species commercially grown to
-produce tea leaves.) They are evergreen and remain lush in winter, when anything else would likely
-be a conifer. They do not demand full sun and are content to be containerized on a condo balcony.
-Last but not the least, many cultivars will stand short periods of freezing temperatures as low as
-−15 °C, and there are cold hardier ones that can tolerate temperatures as low as −25 °C.
+I love camellias. Pictured above is my *Camellia Hiemalis* Shishi Gashira in buds that hopefully
+will bloom in September. This post is going to be my first post about gardening. There are many
+qualities that I really like about camellias. READMORE They produce profuse blooms of large and
+beautiful flowers during cold, gloomy seasons when few other plants are in bloom. The foliage is
+attractive, glossy and can be used to make tea. (*Camellia sinensis* is the species commercially
+grown to produce tea leaves.) They are evergreen and remain lush in winter, when anything else would
+likely be a conifer. They do not demand full sun and are content to be containerized on a condo
+balcony. Last but not the least, many cultivars will stand short periods of freezing temperatures as
+low as −15 °C, and there are cold hardier ones that can tolerate temperatures as low as −25 °C.
 
 Therefore, during the past 10 months or so, I have been trying to get my hands onto camellias. Since
 camellias are not reliably hardy in the GTA area, no nurseries I am aware of grow them here, and
