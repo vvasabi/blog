@@ -1,0 +1,9 @@
+<% unless tags.empty? %>
+  <ul class="article-tags">
+    <% tags.each do |tag| %>
+      <li>
+        <i class="icon-tag"></i> <%= link_to tag, tag_path(tag) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

@@ -1,0 +1,13 @@
+<h2><%= link_to article.title, '/' + path %></h2>
+
+<div class="date">
+  <%= article.date.strftime('%B %e, %Y') %>
+</div>
+
+<% if cover_image %>
+  <p class="cover-image text-center">
+    <% link_to '/' + path do %>
+      <%= image_tag cover_image, alt: article.title %>
+    <% end %>
+  </p>
+<% end %>

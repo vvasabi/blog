@@ -189,7 +189,11 @@ section#main-content {
 
   article {
     h2 {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+
+      @include screen-xs-sm {
+        margin-bottom: 8px;
+      }
     }
 
     p,
@@ -373,10 +377,6 @@ aside#sidebar {
 }
 
 .article-list {
-  h2 {
-    margin-bottom: 12px;
-  }
-
   article {
     margin-bottom: 72px;
 
