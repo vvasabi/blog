@@ -20,10 +20,6 @@ body {
   -moz-font-feature-settings: "liga=1";
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
-
-  @include portrait {
-    padding: 12px 0 0;
-  }
 }
 
 ::selection {
@@ -69,7 +65,7 @@ h2 {
     line-height: 1;
   }
 
-  @include portrait {
+  @include screen-xs {
     font-size: 1.75em;
     font-weight: normal;
     line-height: 1;
@@ -83,8 +79,9 @@ h3 {
   font-weight: normal;
   line-height: 1;
   margin: 48px 0 12px;
+  padding-bottom: 6px;
 
-  @include portrait {
+  @include screen-xs {
     border-bottom: 1px solid #ccc;
   }
 }
@@ -182,8 +179,8 @@ img {
 #wrapper {
   padding: 24px 0;
 
-  @include portrait {
-    padding: 0;
+  @include screen-xs-sm {
+    padding: 12px 0 0;
   }
 }
 
@@ -198,14 +195,14 @@ section#main-content {
     }
 
     h2 {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
   }
 
   .date {
     @include meta-styles;
     font-size: 0.875em;
-    margin: 0 0 12px;
+    margin: 0 0 20px;
   }
 
   .back {
@@ -216,9 +213,9 @@ section#main-content {
     }
   }
 
-  @include portrait {
+  @include screen-xs {
     margin: 0 0 24px;
-    padding: 0 2rem;
+    padding: 0 10px;
   }
 }
 
@@ -245,7 +242,7 @@ ul.article-tags {
     margin-right: 8px;
   }
 
-  @include narrow {
+  @include screen-xs-sm {
     text-align: left;
     float: none;
 
@@ -264,6 +261,10 @@ aside#sidebar {
 
   section {
     margin: 0 0 36px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     a {
       margin-right: 4px;
@@ -287,7 +288,7 @@ aside#sidebar {
       font-weight: 600;
     }
 
-    @include narrow-landscape {
+    @include screen-sm {
       font-size: 1.5em;
     }
   }
@@ -296,6 +297,13 @@ aside#sidebar {
     font-size: 1.5em;
     line-height: 1;
     margin: 0 0 12px;
+
+    @include screen-xs {
+      margin-left: -10px;
+      margin-right: -10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   p {
@@ -317,7 +325,7 @@ aside#sidebar {
     img {
       max-width: 200px;
 
-      @include narrow-landscape {
+      @include screen-sm {
         max-width: 100%;
       }
     }
@@ -352,9 +360,9 @@ aside#sidebar {
     }
   }
 
-  @include portrait {
+  @include screen-xs-sm {
     background: #eee;
-    padding: 20px 2rem 4px;
+    padding: 20px 10px 4px;
   }
 }
 
@@ -364,7 +372,11 @@ aside#sidebar {
   }
 
   article {
-    margin: 0 0 72px;
+    margin-bottom: 72px;
+
+    @include screen-xs-sm {
+      margin-bottom: 48px;
+    }
   }
 
   .page-links {
@@ -380,7 +392,7 @@ aside#sidebar {
   ul.article-tags {
     margin-top: 4px;
 
-    @include narrow {
+    @include screen-xs-sm {
       display: none;
     }
   }
@@ -445,7 +457,7 @@ footer#site-footer {
   line-height: 1;
   text-align: center;
 
-  @include portrait {
+  @include screen-xs-sm {
     background: #999;
     color: #eee;
     padding: 4px 20px;

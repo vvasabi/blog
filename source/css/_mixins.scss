@@ -59,20 +59,20 @@
   }
 }
 
-@mixin portrait {
-  @media (max-width: 767px) {
+@mixin screen-xs {
+  @media (max-width: $screen-xs-max) {
     @content;
   }
 }
 
-@mixin narrow-landscape {
-  @media (max-width: 979px) and (min-width: 768px) {
+@mixin screen-sm {
+  @media (max-width: $screen-sm-max) and (min-width: $screen-xs) {
     @content;
   }
 }
 
-@mixin narrow {
-  @media (max-width: 979px) {
+@mixin screen-xs-sm {
+  @media (max-width: $screen-sm-max) {
     @content;
   }
 }
