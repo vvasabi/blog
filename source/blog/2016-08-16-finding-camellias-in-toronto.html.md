@@ -1,7 +1,7 @@
 ---
 title: Finding Camellias in Toronto
 cover_image: /images/camellia-shishi-gashira.jpg
-date: 2016-08-15
+date: 2016-08-16
 tags: gardening, camellia
 ---
 I love camellias. Pictured above is my *Camellia Hiemalis* Shishi Gashira in buds that hopefully

@@ -1,39 +1,22 @@
 <% wrap_layout :base do %>
   <section id="main-content" class="col-md-9">
     <article class="post">
-      <h2><%= link_to current_page.data.title, '/' + current_page.path %></h2>
-
-      <div class="date">
-        <%= current_page.data.date.strftime('%B %e, %Y') %>
-      </div>
-
-      <% if current_page.data.cover_image %>
-        <p class="cover-image text-center">
-          <% link_to '/' + current_page.path do %>
-            <%= image_tag current_page.data.cover_image, alt: current_page.data.title %>
-          <% end %>
-        </p>
-      <% end %>
+      <%= partial 'partials/article-meta', locals: {
+        article: current_page.data,
+        cover_image: current_page.data.cover_image,
+        path: current_page.path
+      } %>
 
       <%= yield %>
 
-      <% tags = current_page.data.tags.split /,[\s]*/ %>
-      <% unless tags.empty? %>
-        <ul class="article-tags">
-          <% tags.each do |tag| %>
-            <li>
-              <i class="icon-tag"></i> <a href="<%= tag_path tag %>"><%= tag %></a>
-            </li>
-          <% end %>
-        </ul>
-      <% end %>
+      <%= partial 'partials/article-tags', locals: {tags: current_page.data.tags.split(/,[\s]*/)} %>
 
       <div class="back">
         <i class="icon-reply"></i> <%= link_to 'Go back', '/' %>
       </div>
     </article>
 
-    <% if !current_page.data.disable_comments %>
+    <% unless current_page.data.disable_comments %>
       <h3>Comments</h3>
 
       <div id="disqus_thread"></div>

@@ -6,32 +6,15 @@ per_page: 6
 <div class="article-list">
   <% page_articles.each do |article| %>
     <article>
-      <h2><%= link_to article.title, article %></h2>
-
-      <div class="date">
-        <span><%= article.date.strftime('%B %e, %Y') %></span>
-      </div>
-
-      <% if article.data.cover_image %>
-        <p class="cover-image text-center">
-          <% link_to article do %>
-            <%= image_tag article.data.cover_image, alt: article.title %>
-          <% end %>
-        </p>
-      <% end %>
+      <%= partial 'partials/article-meta', locals: {
+        article: article,
+        cover_image: article.data.cover_image,
+        path: article.path
+      } %>
 
       <%= article.summary %>
 
-      <% if !article.tags.empty? %>
-        <ul class="article-tags">
-          <% article.tags.each do |tag| %>
-            <li>
-              <i class="icon-tag"></i>
-              <a href="<%= tag_path tag %>"><%= tag %></a>
-            </li>
-          <% end %>
-        </ul>
-      <% end %>
+      <%= partial 'partials/article-tags', locals: {tags: article.tags} %>
 
       <div class="page-links">
         <i class="icon-book"></i>
@@ -48,16 +31,12 @@ per_page: 6
   <div class="pagination">
     <strong>Go to page</strong>
     <ol>
-      <% for i in 1..num_pages %>
+      <% (1..num_pages).each do |i| %>
         <li>
           <% if i == page_number %>
             <span class="curr"><%= i %></span>
           <% else %>
-            <% if i == 1 %>
-              <%= link_to i, '/' %>
-            <% else %>
-              <%= link_to i, '/page/%s/' % i %>
-            <% end %>
+            <%= link_to i, (i == 1) ? '/' : "/page/#{i}/" %>
           <% end %>
         </li>
       <% end %>
