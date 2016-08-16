@@ -13,7 +13,7 @@ per_page: 6
       </div>
 
       <% if article.data.cover_image %>
-        <p class="text-center">
+        <p class="cover-image text-center">
           <% link_to article do %>
             <%= image_tag article.data.cover_image, alt: article.title %>
           <% end %>
