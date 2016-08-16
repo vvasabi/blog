@@ -12,13 +12,13 @@
     <title><%= current_page.data.title %> | BradChen.com</title>
   </head>
   <body>
-    <div id="wrapper" class="container">
-      <div class="row">
+    <div id="wrapper">
+      <div class="clearfix">
         <%= yield %>
         <%= partial 'partials/sidebar' %>
       </div>
 
-      <footer id="site-footer" class="row">
+      <footer id="site-footer">
         &copy; 2010–2016 Brad Chen
       </footer>
     </div>

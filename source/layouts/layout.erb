@@ -1,9 +1,9 @@
 <%# Layout for Index pages %>
 <% wrap_layout :base do %>
-  <section id="main-content" class="col-md-9 col-xs-12">
+  <section id="main-content" class="col-md-9">
     <%= yield %>
 
-    <% if ! current_page.path.include? 'index.html' %>
+    <% unless current_page.path.include? 'index.html' %>
       <div class="back">
         <i class="icon-reply"></i>
         <%= link_to 'Go back', '/' %>
