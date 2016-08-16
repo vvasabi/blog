@@ -8,7 +8,7 @@
       </div>
 
       <% if current_page.data.cover_image %>
-        <p class="text-center">
+        <p class="cover-image text-center">
           <% link_to '/' + current_page.path do %>
             <%= image_tag current_page.data.cover_image, alt: current_page.data.title %>
           <% end %>
@@ -18,7 +18,7 @@
       <%= yield %>
 
       <% tags = current_page.data.tags.split /,[\s]*/ %>
-      <% if !tags.empty? %>
+      <% unless tags.empty? %>
         <ul class="article-tags">
           <% tags.each do |tag| %>
             <li>

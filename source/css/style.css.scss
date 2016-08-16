@@ -188,14 +188,20 @@ section#main-content {
   margin-bottom: 24px;
 
   article {
+    h2 {
+      margin-bottom: 8px;
+    }
+
     p,
     ol,
     ul {
       font-family: $copy-font-family;
     }
 
-    h2 {
-      margin-bottom: 8px;
+    @include screen-xs-sm {
+      .cover-image {
+        margin-bottom: 12px;
+      }
     }
   }
 
