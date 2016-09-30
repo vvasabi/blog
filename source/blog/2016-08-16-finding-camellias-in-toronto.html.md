@@ -1,5 +1,5 @@
 ---
-title: Finding Camellias in Toronto
+title: Finding/Growing Camellias in Toronto (updated on Sept&nbsp;30)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -52,3 +52,31 @@ shipments of the year, I have not bought plants from them:
 In the coming winter, I am going to follow up with more posts about how I am going to try to
 overwinter my camellias (mostly Zone 7 cultivars) outdoor with lots of protections here in Toronto.
 Stay tuned and wish me luck.
+
+### Update on September 30
+
+My Stephanie Golden opened a bloom 3 days ago. Below is a picture of it. Compared to the picture
+above from August, the buds of my camellias have swelled quite a bit. I anticipate that my Kanjiro
+and Shishi Gashira will bloom in about 2–3 weeks.
+
+<p class="text-center">
+  <img src="/images/2016-sept-stephanie-golden.jpg" alt="Stephanie Golden September 2016"
+    style="width: 320px;" /><br />
+  Camellia Sasanqua Stephanie Golden<br />
+  September 29, 2016
+</p>
+
+Since I posted this blog entry, I have done a lot of googling to see if people with a similar
+climate as Toronto have had success growing camellias outdoors. I have found that people living in
+Connecticut and Rhode Island were able to plant the cold hardy cultivars outside (even though their
+garden centres suggested otherwise). This finding gave me a lot of confidence to see how my tea
+plants will stand the Canadian winter.
+
+In addition, I bought myself a copy of Dr. William Ackerman’s _Beyond the Camellia Belt_ and have
+learnt that some old cultivars, such as Kanjiro and Professor Charles Sargent, are actually quite
+cold hardy. In Ackerman’s testing, these cultivars survived well in the DC/Batimore areas for 20
+years. While Toronto is colder than Maryland, I can see that reasonable protection will give my
+plants good chance surviving the winter here.
+
+Instead of creating new blog posts, I will continue to update this entry to document what I do with
+my camellias as the winter progresses.
