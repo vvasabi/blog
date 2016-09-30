@@ -67,10 +67,10 @@ and Shishi Gashira will bloom in about 2–3 weeks.
 </p>
 
 Since I posted this blog entry, I have done a lot of googling to see if people with a similar
-climate as Toronto have had success growing camellias outdoors. I have found that people living in
-Connecticut and Rhode Island were able to plant the cold hardy cultivars outside (even though their
-garden centres suggested otherwise). This finding gave me a lot of confidence to see how my tea
-plants will stand the Canadian winter.
+climate (temperature-wise) as Toronto have had success growing camellias outdoors. I have found that
+people living in Connecticut and Rhode Island were able to plant the cold hardy cultivars outside
+(even though their garden centres suggested otherwise). This finding gave me a lot of confidence to
+see how my tea plants will stand the Canadian winter.
 
 In addition, I bought myself a copy of Dr. William Ackerman’s _Beyond the Camellia Belt_ and have
 learnt that some old cultivars, such as Kanjiro and Professor Charles Sargent, are actually quite
