@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Sept&nbsp;30)
+title: Finding/Growing Camellias in Toronto (updated on Oct&nbsp;29)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -80,3 +80,25 @@ plants good chance surviving the winter here.
 
 Instead of creating new blog posts, I will continue to update this entry to document what I do with
 my camellias as the winter progresses.
+
+### Update on October 29
+
+My first Kanjiro flower has finally bloomed. I thought Shishi Gashira was going to bloom soon as
+well, but it appears that the buds on Shishi still remain fairly small, compared to Kanjiro’s. This
+is not out of ordinary, though, as Shishi does typically bloom later amongst fall blooming
+camellias. Both Prof Sargent and Laura Walker have fairly sizable buds now and they typically bloom
+around the holidays season. I am hoping that the weather will remain warm enough for the flowers to
+open successfully. Fingers crossed.
+
+I have started to work on winter protection for camellias. I am going to move all my camellias to my
+condo balcony, where they will receive shelter from snow and early morning sun. I have also hung up
+horticultural fleeces to block the wind and direct afternoon sun. For the plants themselves, I am
+going to wrap the containers in cardboard boxes that I picked up for free from Costco. I will post a
+picture once I am done with all of this work.
+
+<p class="text-center">
+  <img src="/images/2016-oct-kanjiro.jpg" alt="Kanjiro October 2016"
+    style="width: 480px;" /><br />
+  Camellia Hiemalis Kanjiro<br />
+  October 29, 2016
+</p>
