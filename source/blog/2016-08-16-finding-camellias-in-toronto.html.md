@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Oct&nbsp;29)
+title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;11)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -101,4 +101,15 @@ picture once I am done with all of this work.
     style="width: 480px;" /><br />
   Camellia Hiemalis Kanjiro<br />
   October 29, 2016
+</p>
+
+### Update on November 11
+
+After a long wait, my Shishi Gashira has finally opened a bloom.
+
+<p class="text-center">
+  <img src="/images/2016-nov-shishi-gashira.jpg" alt="Shishi Gashira November 2016"
+    style="width: 480px;" /><br />
+  Camellia Hiemalis Shishi Gashira<br />
+  November 11, 2016
 </p>
