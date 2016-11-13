@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;11)
+title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;13)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -112,4 +112,29 @@ After a long wait, my Shishi Gashira has finally opened a bloom.
     style="width: 480px;" /><br />
   Camellia Hiemalis Shishi Gashira<br />
   November 11, 2016
+</p>
+
+### Update on November 13
+
+Yesterday was a happy day. Shishi Gashira opened her second flower, and I found a Yuletide at the
+Mississauga/Etobicoke location of Sheridan Nurseries. They also had a Shishi Gashira available. When
+asked if they were getting more camellia plants, the supervisor there said she ordered 6 but only
+got 2, but more might be on the way. When I asked if other Sheridan locations would carry camellias,
+she said she doubted it, because she was more “adventurous” when it came to ordering plants. When I
+called the Southdown location, the staff indeed said they did not carry camellias since they
+wouldn’t grow here. Though, I did find a small number of these plants at that location earlier this
+year.
+
+On the other hand, I also called Humber Nurseries, and they said they would have camellias available
+in early December. I have a lot of pink camellias now, and I would like to add more of them in
+different colours. Speaking of colour, this Yuletide I found yesterday is, strangely, not in the
+Christmas red commonly described for the cultivar. The flower form, leaf size and growth habit all
+match Yuletide, but the colour is more like faded pink. Regardless, I’m very delighted to have the
+addition. 
+
+<p class="text-center">
+  <img src="/images/2016-nov-yuletide.jpg" alt="Yuletide November 2016"
+    style="width: 480px;" /><br />
+  Camellia Vernalis Yuletide<br />
+  November 12, 2016
 </p>
