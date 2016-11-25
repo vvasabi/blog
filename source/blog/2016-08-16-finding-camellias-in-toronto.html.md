@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;13)
+title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;25)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -138,3 +138,46 @@ addition.
   Camellia Vernalis Yuletide<br />
   November 12, 2016
 </p>
+
+### Update on November 25
+
+A few days ago the temperature dropped to −2 °C, and the flowering of the sasanquas slowed, although
+the ones already opened were not affected by the cold. Today, the temperature has warmed up to 8 °C,
+and I can see my sasanquas are back in the business again. Stephanie Golden, which put out a single
+bloom in September and never did it again, has several big, fat buds ready to open. Shishi Gashira
+and Kanjiro, which have been blooming since the beginning of November, are ready to open a few more,
+as well. My Yuletide that came with pink flowers opened a red flower on a different branch last week
+and is ready to open another red one. These flowers have made me so happy and I spend so much time
+on my balcony every day.
+
+The japonicas, on the other hand, have been very quiet. The early blooming ones, Prof Sargent and
+Laura Walker, although have really fat buds, don’t look like they will bloom any time soon. If they
+don’t bloom in December, then I suppose I will need to wait until March when days warm up.
+
+To see how feasible it really is to keep camellias here in Toronto, I have been doing quite a bit of
+research. I have been rereading Dr. Ackerman’s book, forum posts and blog articles. I look for
+success or failure stories about keeping camellias in the colder regions in the North America and
+verify their claims against historical climate data. Many of those who suggest that camellias grow
+fine in their regions, such as Philadelphia, Pennsylvania or Knoxville, Tennessee, usually won’t
+have lowest winter temperatures less than or too far away from −15 °C.
+
+Stories from one user, bill_ri_z6b, on the GardenWeb have been particularly helpful to me. Since he
+lives in Providence, Rhode Island, his camellias have been exposed to low winter temperatures
+similar to what Toronto has. Although, based on historical climate data, Providence is technically
+slightly warmer than Toronto, stories, such as
+[this](http://forums.gardenweb.com/discussions/2929803/historic-winter-of-2014-2015-damage-report)
+and [this](http://forums.gardenweb.com/discussions/4131396/show-us-your-gardens-a-photo-thread-september-2016)
+about camellia damages from unusually low winter temperatures, are nonetheless helpful in
+determining the lower limits of temperatures that the camellias of cold hardy cultivars can truly
+withstand.
+
+Based on Bill’s experiences, the camellias hardy to Zone 6B, left unprotected, will likely suffer
+some damages when the temperature drops below −20 °C. If parts of a plant can be covered in snow,
+then the insulated areas will be fine. On the other hand, those hardy to Zone 6A did much
+better at those temperatures. This means that, in order to grow camellias in Toronto, gardeners
+should stick to the varieties hardy to Zone 6A or be prepared to provide some winter protections.
+
+I wasn’t expecting growing these southern darlings to be easy, or else more people would have
+been doing it here. My plan for the next few years is therefore to see what level of winter
+protection can reliably help them survive our frigid winters and will report my findings here on my
+blog.
