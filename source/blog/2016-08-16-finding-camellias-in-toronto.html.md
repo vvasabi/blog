@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Nov&nbsp;25)
+title: Finding/Growing Camellias in Toronto (updated on Feb&nbsp;23, 17)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -181,3 +181,44 @@ I wasn’t expecting growing these southern darlings to be easy, or else more pe
 been doing it here. My plan for the next few years is therefore to see what level of winter
 protection can reliably help them survive our frigid winters and will report my findings here on my
 blog.
+
+### Update on February 23, 2017
+
+Today, the temperature soared to almost 20 °C, so I thought it would be a good idea to check on how
+my plants have been doing and to clean up the fallen leaves. As well, I thought I should update this
+post, something I have not done for 3 months.
+
+Since the last update, I have been watering my plants weekly. If the temperature was below zero and
+the soil was frozen, then I would wait until it got above freezing before watering again. Since all
+my plants were in containers, I put them on small buckets/pedestals to allow for proper drainage. I
+also wrapped each pot with garden fleece and let the containers tightly cuddle together, so the soil
+temperature would fluctuate as little as possible.
+
+Thanks to the exceptionally mild winter we had, most of my plants appeared to have survived, so far.
+Normally, the temperature can drop below −20 °C, but this year the coldest nights only reached
+−12 °C. Aside from the camellias, my normal, non-cold-hardy, Zone 7 gardenias appeared to have made
+it. The only camellias that appeared to be dead were the ones I bought in December, as there was
+not enough time for them to harden for the climate. I also bought a 5′ tall Kramer’s Supreme in
+December, that, while survived, had a number of leaves turned brown and dropped.
+
+Aside from those ones bought too late in the season that suffered, the only other camellia cultivars
+that had significant foliage losses were Prof Sargent and Laura Walker. Though, they did not start
+dropping leaves until I moved them to a much more sheltered and warmer corner on the balcony in
+early January. Perhaps they preferred to stay in the cold. I will try that the next winter.
+
+Cultivars that did really well were April Blush (rated Zone 6b, after all), Royal Velvet, Kanjiro,
+Shishi Gashira and Stephanie Golden. All the sasanquas, Kanjiro, Shishi and Stephanie bloomed during
+warm spells in early January. Though, none of their unopened buds survived past January. On the
+other hand, all the japonicas bought before the winter have their buds looking green and healthy.
+We will see if they are able to bloom successfully in the coming months.
+
+Cultivars that did ok were Early Autumn, Yuletide and C. Sinensis Small Leaf Tea. Yuletide was
+bought in late November. The branches that had significant cold damage also showed visible
+fertilizer burn before the winter. Kramer’s Supreme also had the same problem: the branches that
+already suffered from over-fertilization had the most trouble when it got really cold. Early Autumn
+did drop some leaves, but not nearly as many as Prof Sargent or Laura Walker. Small Leaf Tea
+actually did surprisingly well, considering that it was a sinensis and it was also bought in
+December. It did not drop a lot of leaves, but a small number of leaves looked dried and dead.
+
+All in all, I am quite pleased that most of my plants have made it to this far. I will update this
+post again when spring officially comes.
