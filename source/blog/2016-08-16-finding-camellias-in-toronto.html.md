@@ -1,5 +1,5 @@
 ---
-title: Finding/Growing Camellias in Toronto (updated on Feb&nbsp;23, 17)
+title: Finding/Growing Camellias in Toronto (updated on Apr&nbsp;5, 17)
 cover_image: /images/camellia-shishi-gashira.jpg
 date: 2016-08-16
 tags: gardening, camellia
@@ -222,3 +222,50 @@ December. It did not drop a lot of leaves, but a small number of leaves looked d
 
 All in all, I am quite pleased that most of my plants have made it to this far. I will update this
 post again when spring officially comes.
+
+### Update on April 5, 2017
+
+<p class="text-center">
+  <img src="/images/2017-apr-early-autumn.jpg" alt="Early Autumn April 2017"
+    style="width: 480px;" /><br />
+  Camellia Japonica Early Autumn<br />
+  April 5, 2017
+</p>
+
+So, spring has arrived. My Early Autumn has opened up a flower. Like I mentioned in the last update,
+most of my camellias survived. The two japonicas, Prof Sargent and Laura Walker, that struggled
+probably did because of a nearby exhaust outlet. It is possible that the combination of hot, dry and
+cold, dry air blowing on them caused the leaves to desiccate. Since they have survived, I will put
+them elsewhere the next winter.
+
+On the other hand, I had 3 camellias that stayed indoors during this winter. Despite what people say
+that overwintering inside the house is not ideal for camellias, mine that did flowered normally and
+are leafing out now. I had my thermostat set to 22 ºC and had a humidifier pumping out humid air
+24/7. (Not just for the camellias, I could use some humidity, too!) I will keep more camellias
+inside the next winter and see if I get more flowers.
+
+This is likely my last update on this post, but I will create a new post when winter 17/18 is here.
+Since I like camellias a lot, I will continue to experiment with them to see how they can be grown
+here in the north. I would like to conclude this post with the things I found that worked well for
+me:
+
+* I use peat moss and pine bark mini nuggets as my growing medium. I also add a bit of sand for
+  drainage, and it makes the otherwise lightweight peat/bark mix heavier and more stable.
+* I put a 1-inch layer of pine bark mini nuggets as mulch at the top of soil to retain moisture and
+  prevent weed growth.
+* I water regularly and make sure the soil never dries out. All the containers I use have drainage
+  holes and will drain excessive water either to the ground or to the saucer.
+* I try to use large containers, and most of my camellias are in a 5-gallon container. Ones that
+  aren’t will be repotted soon.
+* I feed my camellias with organic fertilizers, such as coffee ground, alfalfa meal, fish bone meal,
+  azomite, kelp meal, etc. I feed lightly twice a year, in early spring (April) and in late summer
+  (August).
+* Camellias bought from a nursery late in the fall or during winter won’t be hardened enough to
+  survive the cold outdoors. I have learned this lesson the hard way: ones I bought late in the
+  season either died or got damaged significantly outside. They should stay indoors until the next
+  spring.
+* For my balcony, I used clear vinyl sheets to create a windbreak to prevent cold winter wind from
+  desiccating the camellias. I also wrapped all the pots with horticultural fleeces and let them
+  cuddle closely together, so the pots won’t freeze too much. Since the last winter was rather mild,
+  I hesitate to say that this will allow camellias to survive the usual −20 °C toronto winter, but
+  we will see in the coming years.
