@@ -259,7 +259,7 @@ me:
   aren’t will be repotted soon.
 * I feed my camellias with organic fertilizers, such as coffee ground, alfalfa meal, fish bone meal,
   azomite, kelp meal, etc. I feed lightly twice a year, in early spring (April) and in late summer
-  (August).
+  (August). In late summer, I only use fertilizers low in Nitrogen.
 * Camellias bought from a nursery late in the fall or during winter won’t be hardened enough to
   survive the cold outdoors. I have learned this lesson the hard way: ones I bought late in the
   season either died or got damaged significantly outside. They should stay indoors until the next
